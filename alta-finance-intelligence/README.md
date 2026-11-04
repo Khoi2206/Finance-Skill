@@ -16,6 +16,7 @@ afi ingest data/inbox/*.xlsx              # raw copy (sha256, idempotent) + pars
 afi reconcile                             # controls → data/dq/dq_report.md, status per company × month
 afi pl --company APL --month 2026-10 --lineage net_revenue
 afi export-pl --year 2026 --out actuals_2026.csv   # CSV company,month,line,amount (đồng) → tools/budget-model
+afi boardpack --month 2026-10 [--mode ytd] [--plan plan.csv]  # board pack PPTX (tools/board-pack)
 afi status                                # manifest (all extractions, incl. superseded/quarantined)
 afi cash13w --inputs data/cash13w/2026-11-09 --start 2026-11-09   # 13-week cash forecast (mỗi thứ Hai)
 ```

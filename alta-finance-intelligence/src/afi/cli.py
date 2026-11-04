@@ -6,11 +6,11 @@
   afi status                 list extractions in the manifest
   afi pl --company APL --month 2026-10 [--lineage net_revenue]
   afi export-pl --out actuals.csv [--year 2026]   CSV company,month,line,amount (VND) for tools/budget-model
+  afi boardpack --month 2026-10 [--mode month|ytd] [--plan plan.csv]   board pack PPTX (tools/board-pack)
   afi cash13w --inputs DIR [--start 2026-11-09] [--out DIR] [--no-save]
                              13-week direct cash forecast (Base/Downside), saved as a version
   afi cash13w --templates DIR      write empty CSV templates + params.yaml
   afi cash13w --write-sample DIR   write a synthetic sample (inputs for 2 Mondays + FAST-style GL)
-  afi boardpack --month 2026-10 [--mode month|ytd] [--plan plan.csv]   board pack PPTX (tools/board-pack)
 """
 from __future__ import annotations
 
@@ -37,6 +37,10 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("status")
     p = sub.add_parser("pl"); p.add_argument("--company"); p.add_argument("--month"); p.add_argument("--lineage")
     p = sub.add_parser("export-pl"); p.add_argument("--out", type=Path, required=True); p.add_argument("--year")
+    p = sub.add_parser("boardpack", help="board pack PPTX (tools/board-pack)")
+    p.add_argument("--month", required=True); p.add_argument("--mode", choices=["month", "ytd"], default="month")
+    p.add_argument("--plan", type=Path); p.add_argument("--out", type=Path)
+    p.add_argument("--threshold-pct", type=float, default=0.10); p.add_argument("--threshold-amount", type=float, default=500e6)
     p = sub.add_parser("cash13w", help="13-week cash forecast")
     p.add_argument("--inputs", type=Path, help="folder with bank_balances.csv, ar_open.csv, ... params.yaml")
     p.add_argument("--start", help="Monday of forecast week 1 (default: Monday of this week)")
@@ -45,10 +49,6 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-save", action="store_true", help="do not store this run as a forecast version")
     p.add_argument("--templates", type=Path, help="write empty input templates to this folder and exit")
     p.add_argument("--write-sample", type=Path, help="write a synthetic sample to this folder and exit")
-    p = sub.add_parser("boardpack", help="board pack PPTX (tools/board-pack)")
-    p.add_argument("--month", required=True); p.add_argument("--mode", choices=["month", "ytd"], default="month")
-    p.add_argument("--plan", type=Path); p.add_argument("--out", type=Path)
-    p.add_argument("--threshold-pct", type=float, default=0.10); p.add_argument("--threshold-amount", type=float, default=500e6)
     a = ap.parse_args(argv)
 
     if a.cmd == "ingest":
@@ -90,6 +90,18 @@ def main(argv: list[str] | None = None) -> int:
     elif a.cmd == "export-pl":
         n = Warehouse(a.data).export_pl_csv(a.out, a.year)
         print(f"{n} rows → {a.out}")
+    elif a.cmd == "boardpack":
+        tool = ROOT.parent / "tools" / "board-pack"
+        if not tool.exists():
+            print(f"Không tìm thấy công cụ board pack tại {tool}", file=sys.stderr)
+            return 2
+        sys.path.insert(0, str(tool))
+        from boardpack.cli import main as boardpack_main  # noqa: PLC0415
+        args = ["--month", a.month, "--mode", a.mode, "--data", str(a.data),
+                "--threshold-pct", str(a.threshold_pct), "--threshold-amount", str(a.threshold_amount)]
+        args += ["--plan", str(a.plan)] if a.plan else []
+        args += ["--out", str(a.out)] if a.out else []
+        return boardpack_main(args)
     elif a.cmd == "cash13w":
         return _cash13w(a)
     return 0
@@ -134,18 +146,6 @@ def _cash13w(a) -> int:
     print(f"DATA REQUIRED: {len(res['data_required'])} ({blocking} loại khỏi dự báo)")
     c = res["comparison"]
     print(f"So sánh: {c.get('prior_version_id') or c.get('message')}")
-    elif a.cmd == "boardpack":
-        tool = ROOT.parent / "tools" / "board-pack"
-        if not tool.exists():
-            print(f"Không tìm thấy công cụ board pack tại {tool}", file=sys.stderr)
-            return 2
-        sys.path.insert(0, str(tool))
-        from boardpack.cli import main as boardpack_main  # noqa: PLC0415
-        args = ["--month", a.month, "--mode", a.mode, "--data", str(a.data),
-                "--threshold-pct", str(a.threshold_pct), "--threshold-amount", str(a.threshold_amount)]
-        args += ["--plan", str(a.plan)] if a.plan else []
-        args += ["--out", str(a.out)] if a.out else []
-        return boardpack_main(args)
     return 0
 
 

@@ -1,0 +1,830 @@
+[
+ {
+  "domain": "01-cfo-leadership",
+  "name": "ar-cfo-advisor",
+  "orig": "cfo-advisor",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/cfo-advisor",
+  "license": "MIT",
+  "desc": "Startup finance: runway and burn, unit economics (LTV, CAC, payback), fundraising and dilution, board financials. Use whenever the user shares burn, cash, ARR or CAC numbers or asks if they can raise."
+ },
+ {
+  "domain": "01-cfo-leadership",
+  "name": "ev-charlie",
+  "orig": "charlie",
+  "repo": "EveryInc/charlie-cfo-skill",
+  "url": "https://github.com/EveryInc/charlie-cfo-skill",
+  "license": "MIT",
+  "desc": "Your AI CFO for bootstrapped startups, named after Charlie Munger who embodied the principle that capital discipline is a competitive advantage. Provides financial frameworks for cash management, runway calculations, uni"
+ },
+ {
+  "domain": "01-cfo-leadership",
+  "name": "cm-cfo-orchestrator",
+  "orig": "cfo-orchestrator",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/cfo-orchestrator",
+  "license": "MIT",
+  "desc": "Routes CFO and financial operations requests to specialized sub-skills based on user intent matching, task classification, and multi-skill chain assembly. Use when the user mentions startup CFO tasks, financial operation"
+ },
+ {
+  "domain": "01-cfo-leadership",
+  "name": "fs-founder-cfo",
+  "orig": "founder-cfo",
+  "repo": "Jakeschincariol/founder-skill",
+  "url": "https://github.com/Jakeschincariol/founder-skill/tree/HEAD/skills/founder-cfo",
+  "license": "MIT",
+  "desc": "Your CFO. Builds the unit economics of a business before money is spent: what one unit earns after its direct costs, the real profit margin at the planned volume, the break-even point in units a day, year 1 month by mont"
+ },
+ {
+  "domain": "02-fpa-budget-forecast",
+  "name": "cm-budget-creation-management",
+  "orig": "budget-creation-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/financial-planning-analysis/budget-creation-management",
+  "license": "MIT",
+  "desc": "Creates and manages operating budgets — annual plans, quarterly refreshes, and rolling forecasts at department-level granularity, with variance tracking and budget-vs-actual analysis. Use when the user mentions \"create a"
+ },
+ {
+  "domain": "02-fpa-budget-forecast",
+  "name": "cm-revenue-forecasting",
+  "orig": "revenue-forecasting",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/financial-planning-analysis/revenue-forecasting",
+  "license": "MIT",
+  "desc": "Builds revenue forecasts — cohort-based, pipeline-driven, or SaaS metric-driven models with top-down and bottom-up approaches, growth scenarios, and revenue composition analysis. Use when the user mentions \"revenue forec"
+ },
+ {
+  "domain": "02-fpa-budget-forecast",
+  "name": "cm-scenario-planning",
+  "orig": "scenario-planning",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/financial-planning-analysis/scenario-planning",
+  "license": "MIT",
+  "desc": "Runs multi-scenario financial planning — best/base/worst case, sensitivity analysis, trigger events, and contingency planning for startup financial resilience. Use when the user mentions \"scenario planning,\" \"best case w"
+ },
+ {
+  "domain": "02-fpa-budget-forecast",
+  "name": "cm-business-case-modeling",
+  "orig": "business-case-modeling",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/financial-planning-analysis/business-case-modeling",
+  "license": "MIT",
+  "desc": "Builds business cases and ROI models — NPV, IRR, payback period, and break-even analysis for new initiatives, product launches, market expansions, and capital allocation decisions. Use when the user mentions \"business ca"
+ },
+ {
+  "domain": "02-fpa-budget-forecast",
+  "name": "cm-forecast-accuracy-tracking",
+  "orig": "forecast-accuracy-tracking",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/financial-planning-analysis/forecast-accuracy-tracking",
+  "license": "MIT",
+  "desc": "Tracks forecast accuracy over time — measures forecast vs actuals, identifies systematic biases, improves forecasting processes, and builds a culture of accountability. Use when the user mentions \"forecast accuracy,\" \"fo"
+ },
+ {
+  "domain": "02-fpa-budget-forecast",
+  "name": "cm-unit-economics-analysis",
+  "orig": "unit-economics-analysis",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/financial-planning-analysis/unit-economics-analysis",
+  "license": "MIT",
+  "desc": "Analyzes startup unit economics — CAC, LTV, payback period, contribution margin by segment, cohort profitability, and efficiency metrics. Use when the user mentions \"CAC,\" \"LTV / CAC ratio,\" \"payback period,\" \"unit econo"
+ },
+ {
+  "domain": "02-fpa-budget-forecast",
+  "name": "ar-financial-analyst",
+  "orig": "financial-analyst",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/finance/skills/financial-analyst",
+  "license": "MIT",
+  "desc": "Analyze financial statements, value a company with a DCF, explain budget variance, build rolling forecasts. Use whenever the user asks what a business is worth or why spend missed budget."
+ },
+ {
+  "domain": "02-fpa-budget-forecast",
+  "name": "ar-commercial-forecaster",
+  "orig": "commercial-forecaster",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/commercial/skills/commercial-forecaster",
+  "license": "MIT",
+  "desc": "Use when building a bookings, ARR, pipeline or NRR forecast, or a commit, best-case and pipeline board number. Forecasts with bookings_forecaster.py, projects cohorts with cohort_arr_projector.py and scores stage confide"
+ },
+ {
+  "domain": "02-fpa-budget-forecast",
+  "name": "an-variance-commentary",
+  "orig": "variance-commentary",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/fund-admin/skills/variance-commentary",
+  "license": "Apache-2.0",
+  "desc": "Write flux commentary for every P&L and balance-sheet line over threshold — current vs prior period and vs budget, with the driver explained from underlying activity. Use for the month-end close package and management re"
+ },
+ {
+  "domain": "03-treasury-cash-capital",
+  "name": "cm-cash-forecasting",
+  "orig": "cash-forecasting",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/cash-treasury/cash-forecasting",
+  "license": "MIT",
+  "desc": "Builds and maintains a 13-week rolling cash forecast — models inflows, outflows, scenario analysis, and forecast-vs-actual accuracy tracking. Use when the user mentions cash forecast, 13-week forecast, liquidity projecti"
+ },
+ {
+  "domain": "03-treasury-cash-capital",
+  "name": "cm-cash-monitoring",
+  "orig": "cash-monitoring",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/cash-treasury/cash-monitoring",
+  "license": "MIT",
+  "desc": "Monitors daily cash position across all accounts, flags anomalies, tracks burn rate, and produces a daily cash snapshot. Use when the user mentions cash position, daily cash check, burn rate, bank balance, or asks about "
+ },
+ {
+  "domain": "03-treasury-cash-capital",
+  "name": "cm-working-capital-optimization",
+  "orig": "working-capital-optimization",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/cash-treasury/working-capital-optimization",
+  "license": "MIT",
+  "desc": "Optimizes working capital — improves DPO, accelerates collections, manages inventory, and negotiates payment terms to maximize cash efficiency. Use when the user mentions working capital, cash conversion cycle, DPO, DSO,"
+ },
+ {
+  "domain": "03-treasury-cash-capital",
+  "name": "cm-bank-reconciliation",
+  "orig": "bank-reconciliation",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/cash-treasury/bank-reconciliation",
+  "license": "MIT",
+  "desc": "Reconciles bank accounts and credit cards monthly — matches every transaction to the ledger, resolves exceptions, tracks uncleared items, and documents the process. Use when the user mentions bank reconciliation, transac"
+ },
+ {
+  "domain": "03-treasury-cash-capital",
+  "name": "cm-banking-relationship-management",
+  "orig": "banking-relationship-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/cash-treasury/banking-relationship-management",
+  "license": "MIT",
+  "desc": "Manages banking relationships — account optimization, fee negotiation, credit facility oversight, treasury yield, and fraud prevention. Use when the user mentions banking setup, bank fees, credit facility, treasury yield"
+ },
+ {
+  "domain": "03-treasury-cash-capital",
+  "name": "ps-debt-covenant-dscr-monitor",
+  "orig": "debt-covenant-dscr-monitor",
+  "repo": "parinshahAIbuilder/cfo-agent-skills",
+  "url": "https://github.com/parinshahAIbuilder/cfo-agent-skills/tree/HEAD/skills/debt-covenant-dscr-monitor",
+  "license": "MIT",
+  "desc": "Tests a company's financials against its loan, bond or NCD covenants (DSCR, ICR, Debt/EBITDA, net debt/EBITDA, D/E, TOL/TNW, current ratio, FACR), shows headroom and how far EBITDA can fall before a breach, flags breache"
+ },
+ {
+  "domain": "03-treasury-cash-capital",
+  "name": "ps-loan-offer-true-cost-comparator",
+  "orig": "loan-offer-true-cost-comparator",
+  "repo": "parinshahAIbuilder/cfo-agent-skills",
+  "url": "https://github.com/parinshahAIbuilder/cfo-agent-skills/tree/HEAD/skills/loan-offer-true-cost-comparator",
+  "license": "MIT",
+  "desc": "Compares two or more loan offers (home, personal, business, car, education, term loan) on their TRUE cost — converts flat rates, processing fees, taxes on fees, bundled insurance, moratoriums and prepayment penalties int"
+ },
+ {
+  "domain": "03-treasury-cash-capital",
+  "name": "ps-credit-rating-readiness",
+  "orig": "credit-rating-readiness",
+  "repo": "parinshahAIbuilder/cfo-agent-skills",
+  "url": "https://github.com/parinshahAIbuilder/cfo-agent-skills/tree/HEAD/skills/credit-rating-readiness",
+  "license": "MIT",
+  "desc": "Prepares a company for a first or annual credit rating (bank loan rating, NCD/bond rating, commercial paper) — scores business and financial risk the way rating agencies do, estimates an indicative rating band, identifie"
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "cm-monthly-close-process",
+  "orig": "monthly-close-process",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/reporting-compliance/monthly-close-process",
+  "license": "MIT",
+  "desc": "Runs the full month-end close process end-to-end, including revenue recognition, accruals, reconciliations, journal entries, and the financial close checklist. Use when the user mentions month-end close, closing the book"
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "cm-financial-statement-generation",
+  "orig": "financial-statement-generation",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/reporting-compliance/financial-statement-generation",
+  "license": "MIT",
+  "desc": "Generates the three core financial statements — P&L (income statement), balance sheet, and cash flow statement — with proper formatting, classifications, and period-over-period comparisons. Use when the user mentions fin"
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "cm-internal-controls-design",
+  "orig": "internal-controls-design",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/reporting-compliance/internal-controls-design",
+  "license": "MIT",
+  "desc": "Design and maintain internal controls — segregation of duties, approval matrices, process documentation, audit trails, and a startup-appropriate control environment to prevent fraud and errors."
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "cm-audit-preparation",
+  "orig": "audit-preparation",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/reporting-compliance/audit-preparation",
+  "license": "MIT",
+  "desc": "Prepare for financial audits — schedules, reconciliations, documentation, walkthroughs, PBC (prepared by client) lists, and finding resolution for annual financial statement audits."
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "cm-tax-compliance-management",
+  "orig": "tax-compliance-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/reporting-compliance/tax-compliance-management",
+  "license": "MIT",
+  "desc": "Manage the full tax compliance lifecycle — calendar management, federal and state filings, payroll taxes, sales tax, corporate income tax, R&D credits, and multi-state nexus tracking."
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "cm-accounts-receivable-management",
+  "orig": "accounts-receivable-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/financial-operations/accounts-receivable-management",
+  "license": "MIT",
+  "desc": "Manages the full accounts receivable workflow including customer invoicing, payment collection and matching, DSO calculation and trend analysis, AR aging reports, collections escalation, and bad debt reserve recommendati"
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "cm-accounts-payable-management",
+  "orig": "accounts-payable-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/financial-operations/accounts-payable-management",
+  "license": "MIT",
+  "desc": "Manages the full accounts payable workflow including vendor invoice intake, approval routing, payment scheduling, vendor reconciliation, AP aging tracking, and DPO optimization. Use when the user mentions paying vendor i"
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "cm-ledger-management",
+  "orig": "ledger-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/financial-operations/ledger-management",
+  "license": "MIT",
+  "desc": "Maintain the general ledger — chart of accounts design, journal entries, month-end adjustments, account reconciliations, and trial balance production."
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "an-accrual-schedule",
+  "orig": "accrual-schedule",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/fund-admin/skills/accrual-schedule",
+  "license": "Apache-2.0",
+  "desc": "Build the period-end accrual schedule — for each accrual, compute the entry, cite the support, and draft the JE. Use during month-end close; the JE is a draft for controller approval, not a posting."
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "an-roll-forward",
+  "orig": "roll-forward",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/fund-admin/skills/roll-forward",
+  "license": "Apache-2.0",
+  "desc": "Build a roll-forward schedule for a balance-sheet account — beginning balance plus activity less reversals equals ending balance, with each component tied to GL. Use for month-end close packages and audit support."
+ },
+ {
+  "domain": "04-accounting-close-controls",
+  "name": "ps-audit-pbc-auditor-query-responder",
+  "orig": "audit-pbc-auditor-query-responder",
+  "repo": "parinshahAIbuilder/cfo-agent-skills",
+  "url": "https://github.com/parinshahAIbuilder/cfo-agent-skills/tree/HEAD/skills/audit-pbc-auditor-query-responder",
+  "license": "MIT",
+  "desc": "Prepares a company for its statutory or internal audit — builds a tailored PBC (Provided-By-Client) list with owners and due dates, tracks status, and drafts evidence-backed replies to auditor queries and management lett"
+ },
+ {
+  "domain": "05-board-investor-reporting",
+  "name": "ar-board-deck-builder",
+  "orig": "board-deck-builder",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/board-deck-builder",
+  "license": "MIT",
+  "desc": "Use when building a board deck, investor update or QBR from all C-suite perspectives. Structures the narrative and how to deliver bad news."
+ },
+ {
+  "domain": "05-board-investor-reporting",
+  "name": "ar-board-meeting",
+  "orig": "board-meeting",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/board-meeting",
+  "license": "MIT",
+  "desc": "Use for /c-level-agents:boardroom or a strategic question that needs a structured multi-executive deliberation. Runs six phases: context, isolated C-suite views, critic, synthesis, founder review and decision."
+ },
+ {
+  "domain": "05-board-investor-reporting",
+  "name": "cm-board-reporting",
+  "orig": "board-reporting",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/reporting-compliance/board-reporting",
+  "license": "MIT",
+  "desc": "Prepares board meeting materials including executive summary, financial review, KPI dashboards, variance analysis, strategic commentary, and action tracking. Use when the user mentions board deck preparation, board meeti"
+ },
+ {
+  "domain": "05-board-investor-reporting",
+  "name": "w95-board-meeting-prep",
+  "orig": "board-meeting-prep",
+  "repo": "w95/awesome-claude-corporate-skills",
+  "url": "https://github.com/w95/awesome-claude-corporate-skills/tree/HEAD/01-executive-leadership/board-meeting-prep",
+  "license": "MIT",
+  "desc": "ACTIVATE when preparing for board meetings, creating board decks, drafting board materials, developing executive summaries for directors, writing talking points, crafting board agendas, addressing governance matters, pre"
+ },
+ {
+  "domain": "05-board-investor-reporting",
+  "name": "w95-kpi-dashboard",
+  "orig": "kpi-dashboard",
+  "repo": "w95/awesome-claude-corporate-skills",
+  "url": "https://github.com/w95/awesome-claude-corporate-skills/tree/HEAD/01-executive-leadership/kpi-dashboard",
+  "license": "MIT",
+  "desc": "ACTIVATE when building executive dashboards, tracking business metrics, creating executive scorecards, monitoring organizational KPIs, setting up health metrics, building dashboards for real-time monitoring, or establish"
+ },
+ {
+  "domain": "05-board-investor-reporting",
+  "name": "w95-executive-communication",
+  "orig": "executive-communication",
+  "repo": "w95/awesome-claude-corporate-skills",
+  "url": "https://github.com/w95/awesome-claude-corporate-skills/tree/HEAD/01-executive-leadership/executive-communication",
+  "license": "MIT",
+  "desc": "ACTIVATE when drafting all-hands speeches, investor updates, quarterly letters to stakeholders, press statements, CEO announcements, crisis communications, customer updates, or any mission-critical communication to emplo"
+ },
+ {
+  "domain": "06-fundraising-capital-markets",
+  "name": "cm-fundraising-financials",
+  "orig": "fundraising-financials",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/fundraising-capital/fundraising-financials",
+  "license": "MIT",
+  "desc": "Build the financial models and narratives for fundraising — 3-statement projections, SaaS metrics, use of funds, valuation analysis, and investor Q&A prep. Use when the user asks about building a fundraising model, creat"
+ },
+ {
+  "domain": "06-fundraising-capital-markets",
+  "name": "cm-investor-relations",
+  "orig": "investor-relations",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/fundraising-capital/investor-relations",
+  "license": "MIT",
+  "desc": "Manage investor communications — monthly/quarterly updates, board meeting preparation, investor portals, ad-hoc requests, and relationship nurturing. Use when the user asks about drafting an investor update, preparing fo"
+ },
+ {
+  "domain": "06-fundraising-capital-markets",
+  "name": "cm-fundraising-process-management",
+  "orig": "fundraising-process-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/fundraising-capital/fundraising-process-management",
+  "license": "MIT",
+  "desc": "Plan and manage the end-to-end fundraising process — timeline, target list, outreach sequencing, pipeline tracking, round structure, and close coordination. Use when the user asks about planning a fundraise, building an "
+ },
+ {
+  "domain": "06-fundraising-capital-markets",
+  "name": "cm-term-sheet-analysis",
+  "orig": "term-sheet-analysis",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/fundraising-capital/term-sheet-analysis",
+  "license": "MIT",
+  "desc": "Analyze and compare term sheets — valuation, liquidation preferences, anti-dilution, board composition, protective provisions, and option pool dynamics. Use when the user asks about analyzing a term sheet, comparing term"
+ },
+ {
+  "domain": "06-fundraising-capital-markets",
+  "name": "cm-cap-table-management",
+  "orig": "cap-table-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/fundraising-capital/cap-table-management",
+  "license": "MIT",
+  "desc": "Manage the capitalization table — track all equity holders, SAFEs and convertible notes, model dilution scenarios, and maintain a fully diluted view. Use when the user asks about updating the cap table, modeling dilution"
+ },
+ {
+  "domain": "06-fundraising-capital-markets",
+  "name": "cm-data-room-management",
+  "orig": "data-room-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/fundraising-capital/data-room-management",
+  "license": "MIT",
+  "desc": "Build and maintain the investor data room — organize financials, metrics, legal docs, contracts, and customer references for fundraising due diligence. Use when the user asks about setting up a data room, organizing docu"
+ },
+ {
+  "domain": "06-fundraising-capital-markets",
+  "name": "ps-startup-term-sheet-reviewer",
+  "orig": "startup-term-sheet-reviewer",
+  "repo": "parinshahAIbuilder/cfo-agent-skills",
+  "url": "https://github.com/parinshahAIbuilder/cfo-agent-skills/tree/HEAD/skills/startup-term-sheet-reviewer",
+  "license": "MIT",
+  "desc": "Reviews a startup equity term sheet (priced round, SAFE, convertible note, CCPS) clause by clause, scores each term founder-friendly / market / aggressive, models what the founders actually take home at exit, and drafts "
+ },
+ {
+  "domain": "06-fundraising-capital-markets",
+  "name": "ps-cap-table-dilution-simulator",
+  "orig": "cap-table-dilution-simulator",
+  "repo": "parinshahAIbuilder/cfo-agent-skills",
+  "url": "https://github.com/parinshahAIbuilder/cfo-agent-skills/tree/HEAD/skills/cap-table-dilution-simulator",
+  "license": "MIT",
+  "desc": "Builds a startup cap table and simulates the next funding rounds — SAFE (post- and pre-money) and convertible note conversion, option-pool top-ups, price per share, founder dilution round by round, and an exit waterfall "
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "cm-profitability-analysis",
+  "orig": "profitability-analysis",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/strategic-advisory/profitability-analysis",
+  "license": "MIT",
+  "desc": "Analyze profitability by dimension — product line, customer segment, channel, geography, cohort — identifying profit drivers and margin improvement opportunities for strategic decision-making."
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "cm-cost-optimization",
+  "orig": "cost-optimization",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/strategic-advisory/cost-optimization",
+  "license": "MIT",
+  "desc": "Identify and execute cost optimization opportunities — vendor renegotiation, tool consolidation, process automation, efficiency improvements, and structural cost reduction for startup efficiency."
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "cm-pricing-strategy-advisory",
+  "orig": "pricing-strategy-advisory",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/strategic-advisory/pricing-strategy-advisory",
+  "license": "MIT",
+  "desc": "Advise on pricing strategy — competitive analysis, willingness-to-pay research, tier design, price increase modeling, discount frameworks, and packaging optimization for startup monetization."
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "cm-headcount-and-comp-planning",
+  "orig": "headcount-and-comp-planning",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/strategic-advisory/headcount-and-comp-planning",
+  "license": "MIT",
+  "desc": "Guide headcount planning and compensation strategy — hiring prioritization, compensation benchmarking, burn impact modeling, equity grant frameworks, and hiring ROI analysis for strategic talent investment."
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "cm-strategic-initiative-modeling",
+  "orig": "strategic-initiative-modeling",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/strategic-advisory/strategic-initiative-modeling",
+  "license": "MIT",
+  "desc": "Model strategic initiatives and expansion scenarios — market entry, partnerships, M&A, new product lines, platform plays — building financial projections and strategic rationale for major company moves."
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "cm-risk-management",
+  "orig": "risk-management",
+  "repo": "gokulsvision/crewm8-cfo-skills",
+  "url": "https://github.com/gokulsvision/crewm8-cfo-skills/tree/HEAD/skills/strategic-advisory/risk-management",
+  "license": "MIT",
+  "desc": "Identify, assess, and manage financial and operational risks — concentration risk, compliance risk, market risk, operational risk, and insurance coverage recommendations for startup resilience."
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "ar-pricing-strategist",
+  "orig": "pricing-strategist",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/commercial/skills/pricing-strategist",
+  "license": "MIT",
+  "desc": "Use when choosing or revisiting pricing: seat, usage, value-based, freemium or hybrid, Van Westendorp willingness-to-pay analysis, or Good/Better/Best tiers. Runs pricing_model_picker.py, wtp_analyzer.py and packaging_de"
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "ar-channel-economics",
+  "orig": "channel-economics",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/commercial/skills/channel-economics",
+  "license": "MIT",
+  "desc": "Use for a direct vs partner channel review: fully loaded cost to serve, channel ROI and the best channel mix under constraints. Runs cost_to_serve_calculator.py, channel_roi_analyzer.py and channel_mix_optimizer.py."
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "wd-monetizing-innovation",
+  "orig": "monetizing-innovation",
+  "repo": "wondelai/skills",
+  "url": "https://github.com/wondelai/skills/tree/HEAD/plugins/product-strategy/skills/monetizing-innovation",
+  "license": "MIT",
+  "desc": "Design products and pricing around validated willingness to pay, from Ramanujam & Tacke''s \"Monetizing Innovation\". Use when the user mentions \"pricing\", \"how much should we charge\", \"willingness to pay\", \"pricing page\","
+ },
+ {
+  "domain": "07-profitability-cost-pricing",
+  "name": "fs-founder-pricing",
+  "orig": "founder-pricing",
+  "repo": "Jakeschincariol/founder-skill",
+  "url": "https://github.com/Jakeschincariol/founder-skill/tree/HEAD/skills/founder-pricing",
+  "license": "MIT",
+  "desc": "Finds the price buyers will actually pay. Reads the consumer panel's four price answers per buyer into a Van Westendorp price-sensitivity range (too cheap, a bargain, getting expensive, too expensive), sets it against wh"
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "ar-ceo-advisor",
+  "orig": "ceo-advisor",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/ceo-advisor",
+  "license": "MIT",
+  "desc": "CEO and founder advice: company strategy, board and investor management, fundraising, org design, culture. Use whenever a CEO asks how to run the company, handle investors or board, or make a big bet."
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "ar-strategic-alignment",
+  "orig": "strategic-alignment",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/strategic-alignment",
+  "license": "MIT",
+  "desc": "Use when teams pull in different directions, OKRs don't connect or departments optimize locally. Maps the strategy cascade and finds orphan goals and silos with alignment_checker.py."
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "ar-scenario-war-room",
+  "orig": "scenario-war-room",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/scenario-war-room",
+  "license": "MIT",
+  "desc": "Use for compound what-if questions ('what if X and Y both happen?') with major downside across functions. Models cascading scenarios with scenario_modeler.py."
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "ar-decision-logger",
+  "orig": "decision-logger",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/decision-logger",
+  "license": "MIT",
+  "desc": "Use when logging a decision after a board meeting, reviewing past decisions or checking overdue actions. Keeps raw transcripts and approved decisions separately with decision_tracker.py."
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "ar-intl-expansion",
+  "orig": "intl-expansion",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/intl-expansion",
+  "license": "MIT",
+  "desc": "Use when expanding to a new country: market selection, entry mode, localization, regulation and regional go-to-market."
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "ar-org-health-diagnostic",
+  "orig": "org-health-diagnostic",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/org-health-diagnostic",
+  "license": "MIT",
+  "desc": "Use for a whole-company health check before a board review or when functions seem at risk. Scores 8 dimensions on a traffic light with health_scorer.py."
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "ar-change-management",
+  "orig": "change-management",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/change-management",
+  "license": "MIT",
+  "desc": "Use when rolling out a reorg, pivot, tool switch, leadership change or product kill. Plans it with ADKAR, communication templates and resistance patterns."
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "w95-strategic-planning",
+  "orig": "strategic-planning",
+  "repo": "w95/awesome-claude-corporate-skills",
+  "url": "https://github.com/w95/awesome-claude-corporate-skills/tree/HEAD/01-executive-leadership/strategic-planning",
+  "license": "MIT",
+  "desc": "ACTIVATE when developing long-term strategy, setting OKRs, creating vision statements, building SWOT analyses, designing strategic frameworks, defining company direction, planning multi-year initiatives, or aligning orga"
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "w95-risk-assessment",
+  "orig": "risk-assessment",
+  "repo": "w95/awesome-claude-corporate-skills",
+  "url": "https://github.com/w95/awesome-claude-corporate-skills/tree/HEAD/01-executive-leadership/risk-assessment",
+  "license": "MIT",
+  "desc": "Identify, assess, and mitigate operational risks. Trigger with \"what are the risks\", \"risk assessment\", \"risk register\", \"what could go wrong\", or when the user is evaluating risks associated with a project, vendor, proc"
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "wd-good-strategy-bad-strategy",
+  "orig": "good-strategy-bad-strategy",
+  "repo": "wondelai/skills",
+  "url": "https://github.com/wondelai/skills/tree/HEAD/plugins/strategy-growth/skills/good-strategy-bad-strategy",
+  "license": "MIT",
+  "desc": "Formulate and audit real strategy using Richard Rumelt''s \"Good Strategy Bad Strategy\": an honest diagnosis, a guiding policy, and coherent action instead of goals, vision, and wishful thinking. Use when the user mention"
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "wd-blue-ocean-strategy",
+  "orig": "blue-ocean-strategy",
+  "repo": "wondelai/skills",
+  "url": "https://github.com/wondelai/skills/tree/HEAD/plugins/strategy-growth/skills/blue-ocean-strategy",
+  "license": "MIT",
+  "desc": "Create uncontested market space using value innovation instead of competing head-to-head. Use when the user mentions \"blue ocean\", \"red ocean\", \"strategy canvas\", \"ERRC framework\", \"value innovation\", \"non-customers\", \"b"
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "wd-crossing-the-chasm",
+  "orig": "crossing-the-chasm",
+  "repo": "wondelai/skills",
+  "url": "https://github.com/wondelai/skills/tree/HEAD/plugins/strategy-growth/skills/crossing-the-chasm",
+  "license": "MIT",
+  "desc": "Navigate the technology adoption lifecycle from early adopters to mainstream market. Use when the user mentions \"crossing the chasm\", \"beachhead segment\", \"whole product\", \"early adopters vs mainstream\", \"tech go-to-mark"
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "wd-traction-eos",
+  "orig": "traction-eos",
+  "repo": "wondelai/skills",
+  "url": "https://github.com/wondelai/skills/tree/HEAD/plugins/strategy-growth/skills/traction-eos",
+  "license": "MIT",
+  "desc": "Implement the Entrepreneurial Operating System (EOS) to align vision and execution across a company. Use when the user mentions \"EOS\", \"Entrepreneurial Operating System\", \"V/TO\", \"quarterly rocks\", \"Level 10 meetings\", \""
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "wd-obviously-awesome",
+  "orig": "obviously-awesome",
+  "repo": "wondelai/skills",
+  "url": "https://github.com/wondelai/skills/tree/HEAD/plugins/strategy-growth/skills/obviously-awesome",
+  "license": "MIT",
+  "desc": "Define product positioning by mapping competitive alternatives, unique attributes, and best-fit customers to the right market category. Use when the user mentions \"positioning\", \"competitive alternatives\", \"how to positi"
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "wd-high-output-management",
+  "orig": "high-output-management",
+  "repo": "wondelai/skills",
+  "url": "https://github.com/wondelai/skills/tree/HEAD/plugins/team-motivation/skills/high-output-management",
+  "license": "MIT",
+  "desc": "Manage for output using Grove''s \"High Output Management\": a manager''s output is their organization''s output, raised by high-leverage activities. Use when the user mentions \"high output management\", \"managerial leverag"
+ },
+ {
+  "domain": "08-strategy-planning",
+  "name": "fs-founder-board",
+  "orig": "founder-board",
+  "repo": "Jakeschincariol/founder-skill",
+  "url": "https://github.com/Jakeschincariol/founder-skill/tree/HEAD/skills/founder-board",
+  "license": "MIT",
+  "desc": "Your board of directors. Puts a business idea in front of a three-member board, each a sub-agent reading the idea through one published framework: the Offers lens (from Alex Hormozi's $100M Offers), the Monopoly lens (fr"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "ar-ma-playbook",
+  "orig": "ma-playbook",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/ma-playbook",
+  "license": "MIT",
+  "desc": "Buy a company or sell yours: diligence, valuation, terms, integration. Use whenever M&A or an exit comes up."
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "w95-ma-due-diligence",
+  "orig": "ma-due-diligence",
+  "repo": "w95/awesome-claude-corporate-skills",
+  "url": "https://github.com/w95/awesome-claude-corporate-skills/tree/HEAD/01-executive-leadership/ma-due-diligence",
+  "license": "MIT",
+  "desc": "ACTIVATE when evaluating acquisition targets, conducting M&A due diligence, planning integration strategy, analyzing synergies, preparing sale materials, assessing culture fit, valuing targets, creating merger checklists"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "ar-partnerships-architect",
+  "orig": "partnerships-architect",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/commercial/skills/partnerships-architect",
+  "license": "MIT",
+  "desc": "Use when deciding whether to sign a partner, at which tier (referral, reseller, OEM, SI, alliance), with what joint GTM and revshare. Runs partner_tier_classifier.py, revshare_modeler.py and joint_gtm_planner.py."
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "ar-business-investment-advisor",
+  "orig": "business-investment-advisor",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/finance/business-investment-advisor/skills/business-investment-advisor",
+  "license": "MIT",
+  "desc": "Use when deciding whether a capital expense is worth it (equipment, property, an acquisition, hiring, technology), or for ROI, IRR, NPV, payback, build vs buy or lease vs buy."
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "an-deal-sourcing",
+  "orig": "deal-sourcing",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/private-equity/skills/deal-sourcing",
+  "license": "Apache-2.0",
+  "desc": "PE deal sourcing workflow — discover target companies, check CRM for existing relationships, and draft personalized founder outreach emails. Use when sourcing new deals, prospecting companies in a sector, or reaching out"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "an-deal-screening",
+  "orig": "deal-screening",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/private-equity/skills/deal-screening",
+  "license": "Apache-2.0",
+  "desc": "Quickly screen inbound deal flow — CIMs, teasers, and broker materials — against the fund's investment criteria. Extracts key deal metrics, runs a pass/fail framework, and outputs a one-page screening memo. Use when revi"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "an-dd-checklist",
+  "orig": "dd-checklist",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/private-equity/skills/dd-checklist",
+  "license": "Apache-2.0",
+  "desc": "Generate and track comprehensive due diligence checklists tailored to the target company's sector, deal type, and complexity. Covers all major workstreams with request lists, status tracking, and red flag escalation. Use"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "an-dd-meeting-prep",
+  "orig": "dd-meeting-prep",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/private-equity/skills/dd-meeting-prep",
+  "license": "Apache-2.0",
+  "desc": "Prepare for due diligence meetings — management presentations, expert network calls, customer references, and advisor sessions. Generates targeted question lists, benchmarks to reference, and red flags to probe. Use befo"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "an-ic-memo",
+  "orig": "ic-memo",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/private-equity/skills/ic-memo",
+  "license": "Apache-2.0",
+  "desc": "Draft a structured investment committee memo for PE deal approval. Synthesizes due diligence findings, financial analysis, and deal terms into a professional IC-ready document. Use when preparing for investment committee"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "an-unit-economics",
+  "orig": "unit-economics",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/private-equity/skills/unit-economics",
+  "license": "Apache-2.0",
+  "desc": "Analyze unit economics for PE targets — ARR cohorts, LTV/CAC, net retention, payback periods, revenue quality, and margin waterfall. Essential for software/SaaS, recurring revenue, and subscription businesses. Use when e"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "an-value-creation-plan",
+  "orig": "value-creation-plan",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/private-equity/skills/value-creation-plan",
+  "license": "Apache-2.0",
+  "desc": "Structure post-acquisition value creation plans with revenue, cost, and operational levers mapped to an EBITDA bridge. Includes 100-day priorities, KPI targets, and accountability frameworks. Use when planning post-close"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "an-returns-analysis",
+  "orig": "returns-analysis",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/private-equity/skills/returns-analysis",
+  "license": "Apache-2.0",
+  "desc": "Build quick IRR/MOIC sensitivity tables for PE deal evaluation. Models returns across entry multiple, leverage, exit multiple, growth, and hold period scenarios. Use when sizing up a deal, stress-testing assumptions, or "
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "an-portfolio-monitoring",
+  "orig": "portfolio-monitoring",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/private-equity/skills/portfolio-monitoring",
+  "license": "Apache-2.0",
+  "desc": "Track and analyze portfolio company performance against plan. Ingests monthly/quarterly financial packages (Excel, PDF), extracts KPIs, flags variances to budget, and produces summary dashboards. Use when reviewing portf"
+ },
+ {
+  "domain": "09-corporate-development-ma",
+  "name": "wd-negotiation",
+  "orig": "negotiation",
+  "repo": "wondelai/skills",
+  "url": "https://github.com/wondelai/skills/tree/HEAD/plugins/product-strategy/skills/negotiation",
+  "license": "MIT",
+  "desc": "Prepare and execute negotiations using tactical empathy, calibrated questions, and the Ackerman method. Use when the user mentions \"salary negotiation\", \"contract terms\", \"handling objections\", \"mirroring and labeling\", "
+ },
+ {
+  "domain": "10-market-competitive-intel",
+  "name": "ar-competitive-intel",
+  "orig": "competitive-intel",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/c-level-advisor/skills/competitive-intel",
+  "license": "MIT",
+  "desc": "Use for competitor analysis, battlecards, win/loss review or positioning against alternatives. Builds a tracking system that feeds positioning, sales and roadmap."
+ },
+ {
+  "domain": "10-market-competitive-intel",
+  "name": "ar-market-research",
+  "orig": "market-research",
+  "repo": "alirezarezvani/claude-skills",
+  "url": "https://github.com/alirezarezvani/claude-skills/tree/HEAD/research-ops/skills/market-research",
+  "license": "MIT",
+  "desc": "Use for market sizing (TAM, SAM, SOM both top-down and bottom-up), survey sample sizes or segment scoring. Runs market_sizer.py, sample_size_planner.py and segmentation_scorer.py and never returns one unsourced number."
+ },
+ {
+  "domain": "10-market-competitive-intel",
+  "name": "an-sector-overview",
+  "orig": "sector-overview",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/equity-research/skills/sector-overview",
+  "license": "Apache-2.0",
+  "desc": "Create comprehensive industry and sector landscape reports covering market dynamics, competitive positioning, key players, and thematic trends. Use for client requests, sector initiations, thematic research pieces, or in"
+ },
+ {
+  "domain": "10-market-competitive-intel",
+  "name": "an-idea-generation",
+  "orig": "idea-generation",
+  "repo": "anthropics/financial-services-plugins",
+  "url": "https://github.com/anthropics/financial-services-plugins/tree/HEAD/plugins/vertical-plugins/equity-research/skills/idea-generation",
+  "license": "Apache-2.0",
+  "desc": "Systematic stock screening and investment idea sourcing. Combines quantitative screens, thematic research, and pattern recognition to surface new long and short ideas. Use when looking for new ideas, running screens, or "
+ },
+ {
+  "domain": "10-market-competitive-intel",
+  "name": "fs-founder-competitors",
+  "orig": "founder-competitors",
+  "repo": "Jakeschincariol/founder-skill",
+  "url": "https://github.com/Jakeschincariol/founder-skill/tree/HEAD/skills/founder-competitors",
+  "license": "MIT",
+  "desc": "Maps every competitor and the gap they leave. Finds the direct competitors, indirect ones and the substitutes a buyer would use instead, from public sources only, and records what each sells, at what price, how they posi"
+ },
+ {
+  "domain": "10-market-competitive-intel",
+  "name": "wd-jobs-to-be-done",
+  "orig": "jobs-to-be-done",
+  "repo": "wondelai/skills",
+  "url": "https://github.com/wondelai/skills/tree/HEAD/plugins/product-strategy/skills/jobs-to-be-done",
+  "license": "MIT",
+  "desc": "Discover what customers truly need by analyzing the \"job\" they hire your product to do. Use when the user mentions \"customer discovery\", \"why customers churn\", \"what job does this solve\", \"competing against luck\", \"produ"
+ }
+]

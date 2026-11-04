@@ -5,6 +5,7 @@
   afi reconcile              run control matrix, write data/dq/dq_report.md
   afi status                 list extractions in the manifest
   afi pl --company APL --month 2026-10 [--lineage net_revenue]
+  afi export-pl --out actuals.csv [--year 2026]   CSV company,month,line,amount (VND) for tools/budget-model
 """
 from __future__ import annotations
 
@@ -29,6 +30,7 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("reconcile")
     sub.add_parser("status")
     p = sub.add_parser("pl"); p.add_argument("--company"); p.add_argument("--month"); p.add_argument("--lineage")
+    p = sub.add_parser("export-pl"); p.add_argument("--out", type=Path, required=True); p.add_argument("--year")
     a = ap.parse_args(argv)
 
     if a.cmd == "ingest":
@@ -67,6 +69,9 @@ def main(argv: list[str] | None = None) -> int:
             print(f"\nLineage: {a.lineage}")
             for fn, row, amt in wh.lineage(a.lineage, a.company, a.month):
                 print(f"  {fn} · row {row}: {amt:,.0f}")
+    elif a.cmd == "export-pl":
+        n = Warehouse(a.data).export_pl_csv(a.out, a.year)
+        print(f"{n} rows → {a.out}")
     return 0
 
 

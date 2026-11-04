@@ -15,6 +15,7 @@ afi dictionary data/inbox/*.xlsx          # physical data dictionary per sample 
 afi ingest data/inbox/*.xlsx              # raw copy (sha256, idempotent) + parse to data/staging/
 afi reconcile                             # controls → data/dq/dq_report.md, status per company × month
 afi pl --company APL --month 2026-10 --lineage net_revenue
+afi export-pl --year 2026 --out actuals_2026.csv   # CSV company,month,line,amount (đồng) → tools/budget-model
 afi status                                # manifest (all extractions, incl. superseded/quarantined)
 ```
 CFO approval of a reconciled month: add it to `data/approvals.yaml`:

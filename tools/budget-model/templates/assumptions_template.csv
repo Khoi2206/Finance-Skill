@@ -1,0 +1,1135 @@
+key,period,value,source,label,unit
+budget_year,D,2027,Cấu trúc mô hình,Năm ngân sách,năm
+unit_vnd,D,1000000,Mô hình tính bằng triệu đồng; CSV thực tế tính bằng đồng,Quy đổi: số đồng trong 1 đơn vị mô hình,đồng
+tax_rate,D,0.2,20% phổ thông — xác nhận ưu đãi/chuyển lỗ từng công ty · MẪU — thay bằng giả định BU,Thuế suất TNDN,%
+bhxh_rate,D,0.215,"21,5% = 17,5% + 3% + 1% — CẦN XÁC NHẬN với kế toán (chưa gồm KPCĐ 2%, trần lương đóng) · MẪU — thay bằng giả định BU",BHXH + BHYT + BHTN phần doanh nghiệp,%
+raise_rate,D,0.06,MẪU — thay bằng giả định BU,Tăng lương bình quân năm ngân sách,%
+bonus_months,D,1.0,MẪU — thay bằng giả định BU,"Thưởng (số tháng lương / năm, trích đều)",tháng
+deposit_rate,D,0.03,MẪU — thay bằng giả định BU,Lãi suất tiền gửi không kỳ hạn/ngắn hạn,%/năm
+ic_days,D,30,MẪU — thay bằng giả định BU,Số ngày thanh toán công nợ nội bộ,ngày
+apl_vol_ext,2026-10,189,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2026-11,194,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2026-12,207,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-01,185,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-02,136,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-03,194,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-04,194,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-05,198,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-06,194,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-07,191,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-08,194,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-09,198,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-10,204,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-11,210,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ext,2027-12,224,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán ngoài tập đoàn,tấn/tháng
+apl_vol_ic,2026-10,21,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2026-11,22,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2026-12,23,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-01,20,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-02,15,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-03,21,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-04,21,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-05,21,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-06,21,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-07,21,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-08,21,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-09,21,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-10,22,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-11,23,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_vol_ic,2027-12,24,MẪU — thay bằng giả định BU,Bao bì — sản lượng bán cho Alta (Mẹ),tấn/tháng
+apl_price_ext,2026-10,46000,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2026-11,46000,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2026-12,46000,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-01,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-02,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-03,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-04,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-05,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-06,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-07,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-08,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-09,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-10,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-11,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ext,2027-12,46920,MẪU — thay bằng giả định BU,Bao bì — giá bán bình quân (ngoài),đồng/kg
+apl_price_ic,2026-10,42000,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2026-11,42000,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2026-12,42000,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-01,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-02,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-03,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-04,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-05,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-06,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-07,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-08,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-09,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-10,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-11,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+apl_price_ic,2027-12,42840,Cần chính sách giá chuyển nhượng (giao dịch liên kết) · MẪU — thay bằng giả định BU,Bao bì — giá bán nội bộ cho Mẹ,đồng/kg
+resin_price,2026-10,30000,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2026-11,30000,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2026-12,30000,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-01,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-02,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-03,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-04,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-05,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-06,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-07,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-08,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-09,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-10,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-11,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+resin_price,2027-12,30600,MẪU — thay bằng giả định BU,Giá hạt nhựa mua vào bình quân,đồng/kg
+apl_resin_norm,D,1.04,MẪU — thay bằng giả định BU,Định mức hạt nhựa / kg thành phẩm,kg/kg
+apl_conv_cost,2026-10,5000,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2026-11,5000,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2026-12,5000,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-01,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-02,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-03,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-04,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-05,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-06,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-07,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-08,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-09,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-10,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-11,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_conv_cost,2027-12,5200,MẪU — thay bằng giả định BU,"Chi phí chuyển đổi (điện, NC trực tiếp, phụ liệu; chưa gồm khấu hao)",đồng/kg
+apl_scrap_rate,D,0.03,MẪU — thay bằng giả định BU,Tỷ lệ phế liệu thu hồi / sản lượng,%
+apl_scrap_price,2026-10,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2026-11,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2026-12,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-01,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-02,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-03,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-04,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-05,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-06,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-07,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-08,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-09,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-10,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-11,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_scrap_price,2027-12,8000,MẪU — thay bằng giả định BU,Giá bán phế liệu,đồng/kg
+apl_resin_vol,2026-10,63,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2026-11,65,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2026-12,69,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-01,60,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-02,44,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-03,63,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-04,63,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-05,64,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-06,63,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-07,62,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-08,63,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-09,64,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-10,66,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-11,68,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_vol,2027-12,72,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — sản lượng bán,tấn/tháng
+apl_resin_markup,D,0.04,MẪU — thay bằng giả định BU,Thương mại hạt nhựa — biên cộng trên giá mua,%
+p3d_orders,2026-10,42.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2026-11,43.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2026-12,46.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-01,44.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-02,32.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-03,46.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-04,46.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-05,47.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-06,46.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-07,45.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-08,46.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-09,47.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-10,48.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-11,50.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_orders,2027-12,53.0,MẪU — thay bằng giả định BU,In 3D — số đơn hàng,đơn/tháng
+p3d_value,2026-10,25,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2026-11,25,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2026-12,25,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-01,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-02,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-03,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-04,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-05,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-06,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-07,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-08,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-09,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-10,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-11,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_value,2027-12,26,MẪU — thay bằng giả định BU,In 3D — giá trị bình quân/đơn,triệu/đơn
+p3d_gm,D,0.45,MẪU — thay bằng giả định BU,In 3D — biên lợi nhuận gộp,%
+apl_dso,D,45,MẪU — thay bằng giả định BU,Plastic — số ngày phải thu,ngày
+apl_dio,D,40,MẪU — thay bằng giả định BU,Plastic — số ngày tồn kho,ngày
+apl_dpo,D,35,MẪU — thay bằng giả định BU,Plastic — số ngày phải trả,ngày
+ame_led_jobs,2026-10,6.3,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2026-11,6.48,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2026-12,6.9,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-01,6.27,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-02,4.62,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-03,6.6,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-04,6.6,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-05,6.732,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-06,6.6,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-07,6.468,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-08,6.6,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-09,6.732,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-10,6.93,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-11,7.128,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_jobs,2027-12,7.59,MẪU — thay bằng giả định BU,LED — số job ký mới (Cho thuê màn hình LED),job/tháng
+ame_led_value,2026-10,300,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2026-11,300,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2026-12,300,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-01,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-02,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-03,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-04,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-05,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-06,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-07,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-08,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-09,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-10,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-11,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_value,2027-12,309,MẪU — thay bằng giả định BU,LED — giá trị bình quân/job,triệu/job
+ame_led_gm,D,0.35,MẪU — thay bằng giả định BU,LED — biên lợi nhuận gộp,%
+ame_led_inm,D,0.5,MẪU — thay bằng giả định BU,LED — % giá trị ghi nhận ngay trong tháng ký,%
+ame_led_burn,D,0.5,MẪU — thay bằng giả định BU,LED — % backlog đầu kỳ ghi nhận mỗi tháng,%
+ame_led_bl0,D,1800,Lấy từ sổ theo dõi hợp đồng/mã vụ việc · MẪU — thay bằng giả định BU,LED — backlog chưa ghi nhận tại ngày đầu kỳ,triệu
+ame_ba_jobs,2026-10,3.15,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2026-11,3.24,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2026-12,3.45,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-01,3.135,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-02,2.31,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-03,3.3,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-04,3.3,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-05,3.366,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-06,3.3,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-07,3.234,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-08,3.3,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-09,3.366,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-10,3.465,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-11,3.564,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_jobs,2027-12,3.795,MẪU — thay bằng giả định BU,"BA — số job ký mới (Thiết bị, giải pháp)",job/tháng
+ame_ba_value,2026-10,800,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2026-11,800,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2026-12,800,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-01,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-02,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-03,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-04,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-05,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-06,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-07,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-08,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-09,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-10,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-11,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_value,2027-12,824,MẪU — thay bằng giả định BU,BA — giá trị bình quân/job,triệu/job
+ame_ba_gm,D,0.2,MẪU — thay bằng giả định BU,BA — biên lợi nhuận gộp,%
+ame_ba_inm,D,0.2,MẪU — thay bằng giả định BU,BA — % giá trị ghi nhận ngay trong tháng ký,%
+ame_ba_burn,D,0.3,MẪU — thay bằng giả định BU,BA — % backlog đầu kỳ ghi nhận mỗi tháng,%
+ame_ba_bl0,D,6000,Lấy từ sổ theo dõi hợp đồng/mã vụ việc · MẪU — thay bằng giả định BU,BA — backlog chưa ghi nhận tại ngày đầu kỳ,triệu
+ame_ttb_jobs,2026-10,8.4,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2026-11,8.64,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2026-12,9.2,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-01,8.36,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-02,6.16,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-03,8.8,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-04,8.8,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-05,8.976,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-06,8.8,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-07,8.624,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-08,8.8,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-09,8.976,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-10,9.24,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-11,9.504,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_jobs,2027-12,10,MẪU — thay bằng giả định BU,TTB — số job ký mới (Cho thuê hệ thống đa phương tiện),job/tháng
+ame_ttb_value,2026-10,120,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2026-11,120,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2026-12,120,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-01,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-02,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-03,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-04,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-05,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-06,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-07,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-08,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-09,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-10,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-11,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_value,2027-12,124,MẪU — thay bằng giả định BU,TTB — giá trị bình quân/job,triệu/job
+ame_ttb_gm,D,0.3,MẪU — thay bằng giả định BU,TTB — biên lợi nhuận gộp,%
+ame_ttb_inm,D,0.6,MẪU — thay bằng giả định BU,TTB — % giá trị ghi nhận ngay trong tháng ký,%
+ame_ttb_burn,D,0.6,MẪU — thay bằng giả định BU,TTB — % backlog đầu kỳ ghi nhận mỗi tháng,%
+ame_ttb_bl0,D,600,Lấy từ sổ theo dõi hợp đồng/mã vụ việc · MẪU — thay bằng giả định BU,TTB — backlog chưa ghi nhận tại ngày đầu kỳ,triệu
+ame_dvk_jobs,2026-10,4.2,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2026-11,4.32,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2026-12,4.6,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-01,4.18,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-02,3.08,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-03,4.4,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-04,4.4,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-05,4.488,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-06,4.4,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-07,4.312,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-08,4.4,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-09,4.488,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-10,4.62,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-11,4.752,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_jobs,2027-12,5.06,MẪU — thay bằng giả định BU,"DVK — số job ký mới (Dịch vụ, chia doanh thu)",job/tháng
+ame_dvk_value,2026-10,150,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2026-11,150,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2026-12,150,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-01,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-02,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-03,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-04,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-05,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-06,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-07,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-08,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-09,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-10,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-11,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_value,2027-12,154,MẪU — thay bằng giả định BU,DVK — giá trị bình quân/job,triệu/job
+ame_dvk_gm,D,0.4,MẪU — thay bằng giả định BU,DVK — biên lợi nhuận gộp,%
+ame_dvk_inm,D,0.4,MẪU — thay bằng giả định BU,DVK — % giá trị ghi nhận ngay trong tháng ký,%
+ame_dvk_burn,D,0.4,MẪU — thay bằng giả định BU,DVK — % backlog đầu kỳ ghi nhận mỗi tháng,%
+ame_dvk_bl0,D,900,Lấy từ sổ theo dõi hợp đồng/mã vụ việc · MẪU — thay bằng giả định BU,DVK — backlog chưa ghi nhận tại ngày đầu kỳ,triệu
+ame_tkl_jobs,2026-10,5.25,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2026-11,5.4,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2026-12,5.75,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-01,5.225,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-02,3.85,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-03,5.5,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-04,5.5,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-05,5.61,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-06,5.5,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-07,5.39,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-08,5.5,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-09,5.61,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-10,5.775,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-11,5.94,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_jobs,2027-12,6.325,MẪU — thay bằng giả định BU,"TKL — số job ký mới (Phần mềm, thiết kế)",job/tháng
+ame_tkl_value,2026-10,80,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2026-11,80,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2026-12,80,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-01,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-02,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-03,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-04,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-05,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-06,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-07,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-08,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-09,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-10,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-11,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_value,2027-12,82,MẪU — thay bằng giả định BU,TKL — giá trị bình quân/job,triệu/job
+ame_tkl_gm,D,0.55,MẪU — thay bằng giả định BU,TKL — biên lợi nhuận gộp,%
+ame_tkl_inm,D,0.3,MẪU — thay bằng giả định BU,TKL — % giá trị ghi nhận ngay trong tháng ký,%
+ame_tkl_burn,D,0.35,MẪU — thay bằng giả định BU,TKL — % backlog đầu kỳ ghi nhận mỗi tháng,%
+ame_tkl_bl0,D,1200,Lấy từ sổ theo dõi hợp đồng/mã vụ việc · MẪU — thay bằng giả định BU,TKL — backlog chưa ghi nhận tại ngày đầu kỳ,triệu
+ame_dso,D,60,MẪU — thay bằng giả định BU,Media — số ngày phải thu,ngày
+ame_dio,D,5,MẪU — thay bằng giả định BU,Media — số ngày tồn kho/chi phí dở dang,ngày
+ame_dpo,D,45,MẪU — thay bằng giả định BU,Media — số ngày phải trả,ngày
+me_area_total,2026-10,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2026-11,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2026-12,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-01,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-02,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-03,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-04,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-05,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-06,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-07,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-08,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-09,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-10,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-11,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_total,2027-12,12000,MẪU — thay bằng giả định BU,Tổng diện tích cho thuê được,m²
+me_area_apl,2026-10,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2026-11,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2026-12,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-01,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-02,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-03,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-04,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-05,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-06,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-07,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-08,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-09,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-10,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-11,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_apl,2027-12,3000,MẪU — thay bằng giả định BU,Diện tích cho Alta Plastic thuê (nội bộ),m²
+me_area_ame,2026-10,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2026-11,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2026-12,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-01,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-02,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-03,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-04,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-05,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-06,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-07,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-08,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-09,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-10,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-11,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_area_ame,2027-12,500,MẪU — thay bằng giả định BU,Diện tích cho Alta Media thuê (nội bộ),m²
+me_occ,2026-10,0.85,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2026-11,0.85,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2026-12,0.85,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-01,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-02,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-03,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-04,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-05,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-06,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-07,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-08,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-09,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-10,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-11,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_occ,2027-12,0.87,MẪU — thay bằng giả định BU,Tỷ lệ lấp đầy phần diện tích cho bên ngoài,%
+me_rent_ext,2026-10,180000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2026-11,180000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2026-12,180000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-01,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-02,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-03,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-04,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-05,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-06,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-07,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-08,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-09,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-10,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-11,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ext,2027-12,189000,MẪU — thay bằng giả định BU,Đơn giá thuê bình quân (bên ngoài),đồng/m²/tháng
+me_rent_ic,2026-10,150000,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2026-11,150000,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2026-12,150000,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-01,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-02,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-03,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-04,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-05,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-06,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-07,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-08,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-09,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-10,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-11,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_rent_ic,2027-12,157500,Cần chính sách giá chuyển nhượng · MẪU — thay bằng giả định BU,Đơn giá thuê nội bộ,đồng/m²/tháng
+me_opcost,2026-10,25000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2026-11,25000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2026-12,25000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-01,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-02,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-03,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-04,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-05,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-06,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-07,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-08,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-09,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-10,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-11,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_opcost,2027-12,26000,MẪU — thay bằng giả định BU,Chi phí vận hành mặt bằng / m² tổng,đồng/m²/tháng
+me_tech_rev,2026-10,1575,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2026-11,1620,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2026-12,1725,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-01,1496,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-02,1102,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-03,1575,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-04,1575,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-05,1606,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-06,1575,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-07,1544,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-08,1575,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-09,1606,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-10,1654,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-11,1701,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_rev,2027-12,1811,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — doanh thu,triệu/tháng
+me_tech_gm,D,0.18,MẪU — thay bằng giả định BU,Thiết bị & dự án công nghệ — biên gộp,%
+me_bag_price,2026-10,47000,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2026-11,47000,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2026-12,47000,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-01,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-02,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-03,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-04,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-05,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-06,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-07,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-08,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-09,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-10,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-11,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+me_bag_price,2027-12,47940,MẪU — thay bằng giả định BU,Bán lại túi bao bì — giá bán bình quân,đồng/kg
+alta_dso,D,30,MẪU — thay bằng giả định BU,Mẹ — số ngày phải thu,ngày
+alta_dio,D,10,MẪU — thay bằng giả định BU,Mẹ — số ngày tồn kho,ngày
+alta_dpo,D,30,MẪU — thay bằng giả định BU,Mẹ — số ngày phải trả,ngày
+hc_alta_sales_n,2026-10,4,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2026-11,4,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2026-12,4,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-01,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-02,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-03,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-04,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-05,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-06,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-07,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-08,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-09,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-10,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-11,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_n,2027-12,4.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — số người,người
+hc_alta_sales_sal,D,18.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Kinh doanh — lương bình quân hiện tại,triệu/người/tháng
+hc_alta_admin_n,2026-10,12,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2026-11,12,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2026-12,12,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-01,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-02,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-03,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-04,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-05,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-06,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-07,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-08,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-09,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-10,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-11,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_n,2027-12,12.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — số người,người
+hc_alta_admin_sal,D,22.0,MẪU — thay bằng giả định BU,Alta (Mẹ) — Quản lý & văn phòng — lương bình quân hiện tại,triệu/người/tháng
+hc_apl_sales_n,2026-10,10,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2026-11,10,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2026-12,10,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-01,10.0,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-02,10.0,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-03,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-04,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-05,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-06,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-07,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-08,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-09,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-10,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-11,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_n,2027-12,12,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — số người,người
+hc_apl_sales_sal,D,16.0,MẪU — thay bằng giả định BU,Plastic — Kinh doanh — lương bình quân hiện tại,triệu/người/tháng
+hc_apl_admin_n,2026-10,12,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2026-11,12,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2026-12,12,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-01,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-02,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-03,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-04,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-05,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-06,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-07,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-08,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-09,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-10,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-11,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_n,2027-12,12.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — số người,người
+hc_apl_admin_sal,D,18.0,MẪU — thay bằng giả định BU,Plastic — Quản lý & văn phòng — lương bình quân hiện tại,triệu/người/tháng
+hc_apl_3d_n,2026-10,6,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2026-11,6,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2026-12,6,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-01,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-02,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-03,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-04,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-05,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-06,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-07,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-08,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-09,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-10,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-11,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_n,2027-12,6.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — số người,người
+hc_apl_3d_sal,D,15.0,MẪU — thay bằng giả định BU,Plastic — BU In 3D (trực tiếp) — lương bình quân hiện tại,triệu/người/tháng
+hc_ame_sales_n,2026-10,8,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2026-11,8,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2026-12,8,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-01,8.0,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-02,8.0,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-03,8.0,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-04,9,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-05,9,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-06,9,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-07,9,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-08,9,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-09,9,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-10,9,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-11,9,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_n,2027-12,9,MẪU — thay bằng giả định BU,Media — Kinh doanh — số người,người
+hc_ame_sales_sal,D,20.0,MẪU — thay bằng giả định BU,Media — Kinh doanh — lương bình quân hiện tại,triệu/người/tháng
+hc_ame_admin_n,2026-10,10,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2026-11,10,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2026-12,10,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-01,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-02,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-03,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-04,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-05,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-06,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-07,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-08,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-09,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-10,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-11,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_n,2027-12,10.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — số người,người
+hc_ame_admin_sal,D,20.0,MẪU — thay bằng giả định BU,Media — Quản lý & văn phòng — lương bình quân hiện tại,triệu/người/tháng
+alta_ox_mkt,2026-10,60,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2026-11,60,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2026-12,60,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-01,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-02,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-03,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-04,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-05,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-06,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-07,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-08,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-09,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-10,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-11,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_mkt,2027-12,62,MẪU — thay bằng giả định BU,"Marketing, môi giới cho thuê (ALTA)",triệu/tháng
+alta_ox_util,2026-10,120,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2026-11,120,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2026-12,120,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-01,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-02,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-03,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-04,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-05,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-06,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-07,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-08,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-09,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-10,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-11,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_util,2027-12,125,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (ALTA)",triệu/tháng
+alta_ox_service,2026-10,90,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2026-11,90,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2026-12,90,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-01,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-02,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-03,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-04,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-05,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-06,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-07,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-08,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-09,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-10,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-11,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_service,2027-12,94,MẪU — thay bằng giả định BU,"Dịch vụ thuê ngoài (kiểm toán, pháp lý, tư vấn) (ALTA)",triệu/tháng
+alta_ox_other,2026-10,80,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2026-11,80,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2026-12,80,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-01,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-02,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-03,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-04,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-05,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-06,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-07,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-08,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-09,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-10,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-11,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+alta_ox_other,2027-12,83,MẪU — thay bằng giả định BU,Chi phí QLDN khác (ALTA),triệu/tháng
+apl_ox_freight,D,0.025,MẪU — thay bằng giả định BU,"Vận chuyển, giao hàng (APL)",% doanh thu ngoài
+apl_ox_mkt,2026-10,70,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2026-11,70,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2026-12,70,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-01,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-02,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-03,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-04,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-05,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-06,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-07,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-08,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-09,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-10,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-11,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_mkt,2027-12,73,MẪU — thay bằng giả định BU,"Marketing, hoa hồng bán hàng (APL)",triệu/tháng
+apl_ox_admin,2026-10,150,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2026-11,150,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2026-12,150,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-01,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-02,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-03,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-04,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-05,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-06,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-07,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-08,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-09,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-10,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-11,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_admin,2027-12,156,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng, phí ngân hàng (APL)",triệu/tháng
+apl_ox_3d,2026-10,60,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2026-11,60,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2026-12,60,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-01,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-02,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-03,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-04,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-05,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-06,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-07,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-08,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-09,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-10,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-11,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_3d,2027-12,62,MẪU — thay bằng giả định BU,"BU In 3D — chi phí trực tiếp (vật tư phụ, phần mềm, marketing) (APL)",triệu/tháng
+apl_ox_other,2026-10,90,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2026-11,90,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2026-12,90,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-01,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-02,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-03,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-04,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-05,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-06,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-07,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-08,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-09,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-10,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-11,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+apl_ox_other,2027-12,94,MẪU — thay bằng giả định BU,Chi phí QLDN khác (APL),triệu/tháng
+ame_ox_mkt,2026-10,80,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2026-11,80,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2026-12,80,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-01,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-02,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-03,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-04,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-05,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-06,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-07,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-08,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-09,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-10,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-11,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_mkt,2027-12,83,MẪU — thay bằng giả định BU,"Marketing, sự kiện (AME)",triệu/tháng
+ame_ox_comm,D,0.015,MẪU — thay bằng giả định BU,Hoa hồng môi giới dự án (AME),% doanh thu ngoài
+ame_ox_admin,2026-10,90,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2026-11,90,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2026-12,90,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-01,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-02,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-03,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-04,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-05,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-06,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-07,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-08,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-09,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-10,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-11,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_admin,2027-12,94,MẪU — thay bằng giả định BU,"Điện, nước, văn phòng (AME)",triệu/tháng
+ame_ox_other,2026-10,70,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2026-11,70,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2026-12,70,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-01,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-02,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-03,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-04,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-05,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-06,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-07,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-08,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-09,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-10,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-11,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+ame_ox_other,2027-12,73,MẪU — thay bằng giả định BU,Chi phí QLDN khác (AME),triệu/tháng
+capex_alta,2026-10,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2026-11,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2026-12,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-01,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-02,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-03,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-04,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-05,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-06,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-07,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-08,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-09,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-10,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-11,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_alta,2027-12,200,MẪU — thay bằng giả định BU,Capex Alta (Mẹ) — cải tạo mặt bằng,triệu
+capex_apl,2026-10,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2026-11,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2026-12,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-01,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-02,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-03,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-04,6300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-05,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-06,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-07,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-08,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-09,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-10,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-11,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_apl,2027-12,300,MẪU: máy thổi màng mới 6.000tr tháng 4 · MẪU — thay bằng giả định BU,Capex Plastic — bảo trì + máy mới,triệu
+capex_ame,2026-10,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2026-11,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2026-12,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-01,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-02,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-03,1650,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-04,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-05,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-06,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-07,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-08,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-09,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-10,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-11,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+capex_ame,2027-12,150,MẪU — thay bằng giả định BU,"Capex Media — màn hình LED, thiết bị",triệu
+life_alta,D,10,MẪU — thay bằng giả định BU,Thời gian khấu hao tài sản mới — Mẹ,năm
+life_apl,D,8,MẪU — thay bằng giả định BU,Thời gian khấu hao tài sản mới — Plastic,năm
+life_ame,D,5,MẪU — thay bằng giả định BU,Thời gian khấu hao tài sản mới — Media,năm
+dep_exist_alta,2026-10,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2026-11,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2026-12,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-01,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-02,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-03,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-04,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-05,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-06,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-07,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-08,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-09,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-10,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-11,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_alta,2027-12,400,Theo bảng tính khấu hao TSCĐ (FAST) · MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Mẹ,triệu/tháng
+dep_exist_apl,2026-10,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2026-11,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2026-12,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-01,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-02,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-03,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-04,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-05,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-06,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-07,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-08,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-09,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-10,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-11,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_apl,2027-12,550,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Plastic,triệu/tháng
+dep_exist_ame,2026-10,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2026-11,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2026-12,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-01,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-02,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-03,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-04,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-05,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-06,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-07,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-08,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-09,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-10,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-11,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+dep_exist_ame,2027-12,350,MẪU — thay bằng giả định BU,Khấu hao tài sản hiện có — Media,triệu/tháng
+draw_alta,2026-10,0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2026-11,0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2026-12,0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-01,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-02,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-03,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-04,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-05,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-06,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-07,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-08,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-09,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-10,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-11,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+draw_alta,2027-12,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Mẹ,triệu
+repay_alta,2026-10,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2026-11,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2026-12,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-01,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-02,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-03,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-04,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-05,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-06,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-07,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-08,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-09,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-10,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-11,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+repay_alta,2027-12,500,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Mẹ,triệu
+rate_alta,2026-10,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2026-11,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2026-12,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-01,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-02,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-03,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-04,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-05,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-06,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-07,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-08,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-09,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-10,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-11,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+rate_alta,2027-12,0.09,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Mẹ,%/năm
+draw_apl,2026-10,0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2026-11,0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2026-12,0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-01,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-02,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-03,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-04,6000,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-05,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-06,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-07,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-08,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-09,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-10,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-11,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+draw_apl,2027-12,0.0,MẪU: vay trung hạn tài trợ máy mới · MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Plastic,triệu
+repay_apl,2026-10,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2026-11,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2026-12,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-01,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-02,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-03,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-04,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-05,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-06,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-07,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-08,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-09,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-10,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-11,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+repay_apl,2027-12,300,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Plastic,triệu
+rate_apl,2026-10,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2026-11,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2026-12,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-01,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-02,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-03,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-04,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-05,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-06,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-07,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-08,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-09,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-10,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-11,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+rate_apl,2027-12,0.085,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Plastic,%/năm
+draw_ame,2026-10,0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2026-11,0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2026-12,0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-01,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-02,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-03,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-04,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-05,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-06,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-07,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-08,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-09,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-10,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-11,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+draw_ame,2027-12,0.0,MẪU — thay bằng giả định BU,Giải ngân vay ngân hàng — Media,triệu
+repay_ame,2026-10,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2026-11,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2026-12,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-01,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-02,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-03,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-04,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-05,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-06,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-07,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-08,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-09,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-10,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-11,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+repay_ame,2027-12,150,MẪU — thay bằng giả định BU,Trả gốc vay ngân hàng — Media,triệu
+rate_ame,2026-10,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2026-11,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2026-12,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-01,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-02,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-03,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-04,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-05,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-06,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-07,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-08,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-09,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-10,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-11,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+rate_ame,2027-12,0.095,MẪU — thay bằng giả định BU,Lãi suất vay bình quân — Media,%/năm
+icl_draw,2026-10,0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2026-11,0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2026-12,0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-01,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-02,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-03,2000,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-04,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-05,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-06,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-07,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-08,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-09,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-10,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-11,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_draw,2027-12,0.0,MẪU — thay bằng giả định BU,Mẹ cho Media vay thêm (nội bộ),triệu
+icl_repay,2026-10,0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2026-11,0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2026-12,0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-01,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-02,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-03,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-04,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-05,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-06,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-07,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-08,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-09,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-10,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-11,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_repay,2027-12,0.0,MẪU — thay bằng giả định BU,Media trả gốc vay nội bộ cho Mẹ,triệu
+icl_rate,2026-10,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2026-11,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2026-12,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-01,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-02,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-03,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-04,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-05,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-06,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-07,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-08,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-09,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-10,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-11,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+icl_rate,2027-12,0.07,Cần hợp đồng vay & chính sách lãi suất giao dịch liên kết · MẪU — thay bằng giả định BU,Lãi suất vay nội bộ Mẹ → Media,%/năm
+oth_inc_alta,2026-10,0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2026-11,0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2026-12,0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-01,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-02,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-03,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-04,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-05,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-06,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-07,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-08,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-09,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-10,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-11,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_inc_alta,2027-12,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Mẹ,triệu
+oth_exp_alta,2026-10,0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2026-11,0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2026-12,0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-01,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-02,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-03,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-04,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-05,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-06,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-07,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-08,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-09,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-10,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-11,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_exp_alta,2027-12,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Mẹ,triệu
+oth_inc_apl,2026-10,0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2026-11,0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2026-12,0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-01,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-02,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-03,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-04,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-05,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-06,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-07,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-08,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-09,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-10,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-11,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_inc_apl,2027-12,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Plastic,triệu
+oth_exp_apl,2026-10,0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2026-11,0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2026-12,0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-01,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-02,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-03,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-04,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-05,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-06,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-07,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-08,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-09,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-10,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-11,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_exp_apl,2027-12,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Plastic,triệu
+oth_inc_ame,2026-10,0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2026-11,0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2026-12,0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-01,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-02,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-03,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-04,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-05,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-06,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-07,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-08,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-09,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-10,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-11,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_inc_ame,2027-12,0.0,MẪU — thay bằng giả định BU,Thu nhập khác — Media,triệu
+oth_exp_ame,2026-10,0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2026-11,0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2026-12,0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-01,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-02,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-03,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-04,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-05,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-06,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-07,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-08,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-09,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-10,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-11,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+oth_exp_ame,2027-12,0.0,MẪU — thay bằng giả định BU,Chi phí khác — Media,triệu
+div_alta,2026-10,0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2026-11,0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2026-12,0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-01,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-02,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-03,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-04,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-05,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-06,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-07,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-08,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-09,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-10,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-11,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu
+div_alta,2027-12,0.0,Cổ tức con → Mẹ chưa mô hình (cần loại trừ nội bộ nếu có) · MẪU — thay bằng giả định BU,Cổ tức Mẹ trả cổ đông (tiền),triệu

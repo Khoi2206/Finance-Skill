@@ -1,0 +1,4 @@
+openpyxl>=3.1
+pytest>=8
+# tùy chọn: bộ tính công thức dự phòng cho test khi không có LibreOffice
+pycel>=1.0b30

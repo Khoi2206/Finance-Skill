@@ -79,3 +79,9 @@ Xem trang **Quy trình** trong dashboard (bảng “Định nghĩa chỉ số”
 - Bỏ tuổi nợ FIFO ước tính. Chỉ tiêu thiếu nguồn hiển thị “Chưa đủ dữ liệu”.
 - Trang Dữ liệu có bảng **Chức năng × dữ liệu nguồn** cho biết chức năng nào đã có dữ liệu thật/mẫu, và cột “Thiếu cột” cho từng file.
 - Danh sách báo cáo/cột: `docs/fast_export_requirements_v2.md`.
+
+## 7. Sản xuất Alta Plastics (file HTML)
+- Kéo thả file **“Tổng quan sản xuất – Alta Plastics” (.html)** vào trang Dữ liệu. Dashboard đọc khối số liệu `window.BASELINE` nhúng trong file (sổ sản lượng tháng, kế hoạch thổi, kế hoạch cắt + lịch máy + tồn kho, theo dõi máy ngưng, in 3D), **không chạy mã của file**.
+- Chỉ số tính bằng đúng mô hình `AltaModel` của file đó (nhúng nguyên văn), nên số khớp với dashboard sản xuất: thổi/cắt so định mức, phế vượt định mức, cuộn chờ cắt, giờ máy ngưng và nguyên nhân, máy cắt không người, đơn thổi còn lại, tồn thành phẩm theo nhóm, mã sắp hết hàng, in 3D, cảnh báo.
+- Nối với FAST: doanh thu, giá vốn Alta Plastic theo tháng ÷ kg cắt.
+- Truy xuất: file HTML không lưu số dòng Excel, nên nguồn ghi tên file Excel gốc, sheet và khóa (ngày / PO / máy / mã hàng).

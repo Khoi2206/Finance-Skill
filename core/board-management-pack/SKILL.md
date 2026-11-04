@@ -29,7 +29,20 @@ Phụ lục: BCTC từng công ty, đối chiếu nội bộ, chi tiết biến 
 - Định dạng: VND tỷ, 1 chữ số thập phân; số âm trong ngoặc; ghi kỳ & trạng thái số liệu (chưa kiểm toán).
 - Gửi trước họp ≥ 5 ngày làm việc; kèm biên bản họp kỳ trước & bảng theo dõi việc HĐQT giao.
 
-## 4. Đầu ra & kỹ năng liên quan
+## 4. Công cụ tự tạo deck (`tools/board-pack/`)
+Khi số liệu đã nạp vào `alta-finance-intelligence` (`afi ingest` → `afi reconcile` → CFO duyệt trong `data/approvals.yaml`), dựng deck bằng công cụ thay vì làm tay:
+```bash
+afi boardpack --month 2026-10 --plan data/plan_2026.csv            # tháng
+afi boardpack --month 2026-09 --mode ytd --plan data/plan_2026.csv # lũy kế (quý)
+python tools/board-pack/build_board_pack.py --sample               # deck mẫu (dữ liệu tổng hợp)
+```
+- Kế hoạch: CSV `company,month,line,amount` (VND; `line` theo `account_map.yaml` + `interest_expense`). Không có file → so với cùng kỳ.
+- Deck có sẵn: tóm tắt điều hành, KPI, KQKD hợp nhất, giải trình biến động, cầu nối EBITDA, 1 trang/pháp nhân, tiền & vốn lưu động, rủi ro, đề xuất nghị quyết, phụ lục (mục 1 ở trên; mục 6 và 8 chưa có nguồn dữ liệu → ô `[CFO điền]`).
+- Tự áp dụng mục 2–3: ngưỡng giải trình (`--threshold-pct`, `--threshold-amount`), action title, tỷ đồng 1 số lẻ, số âm trong ngoặc, trạng thái dữ liệu APPROVED/RECONCILED/SƠ BỘ trên từng trang, biểu đồ native, nguồn từng số (file + dòng Excel) trong speaker notes.
+- **Việc của Claude/CFO sau khi sinh deck**: điền mọi ô `[CFO điền]` (hành động, người phụ trách, thời hạn, tác động cả năm; khả năng/tác động rủi ro; nội dung nghị quyết); "Tại sao" của công cụ chỉ là dữ kiện — nguyên nhân gốc (giá/lượng/thời điểm) phải xác minh với BU trước khi viết thêm. Không gửi HĐQT khi trang còn trạng thái SƠ BỘ mà không nêu rõ.
+- Chi tiết, hạn chế: `tools/board-pack/README.md`.
+
+## 5. Đầu ra & kỹ năng liên quan
 - Deck (skill `pptx`) hoặc trang HTML; Excel dữ liệu đi kèm (skill `xlsx`).
 - `ar-board-deck-builder`, `ar-board-meeting`, `w95-board-meeting-prep`, `cm-board-reporting`, `w95-kpi-dashboard`, `w95-executive-communication`; số liệu bán hàng từ `alta-sales-report`.
 - Kiểm tra cuối: `financial-analysis:ib-check-deck` (số khớp giữa các trang).

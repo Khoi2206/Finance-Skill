@@ -19,7 +19,7 @@ Dạng công cụ:
 | 1 | **Mô hình Dự báo 2026 & Ngân sách 2027 theo driver** | Excel do script sinh + skill | Plastic: sản lượng × giá bán × giá hạt nhựa; Media: số job/backlog × giá trị × biên; Mẹ: diện tích × đơn giá. 3 kịch bản, ba báo cáo liên kết, hợp nhất loại trừ nội bộ | Số thực tế 9T (pipeline), giả định BU | Mỗi quý cập nhật rolling forecast; mỗi năm làm ngân sách | 2–3 phiên |
 | 2 | **Bộ thu thập giả định ngân sách từ BU** | Trang web có lưu dữ liệu dùng chung | Mỗi trưởng BU điền giả định (khách hàng lớn, sản lượng, giá, nhân sự, capex) vào một form; CFO thấy ai đã nộp, ai chưa, chênh lệch so với định hướng top-down | Danh sách BU, mẫu giả định | Mỗi mùa ngân sách | 1 phiên |
 | 3 | **Dòng tiền 13 tuần** (Phase 3 của đặc tả) | Trang web + Excel | Tiền đầu kỳ đã đối chiếu ngân hàng, công nợ phải thu/trả theo hóa đơn, lịch trả nợ, lương, thuế, capex; Base/Downside; so thực tế với dự báo tuần trước | Sao kê, công nợ, lịch vay | Mỗi thứ Hai | 2 phiên |
-| 4 | **Bộ tạo báo cáo HĐQT / báo cáo quản trị tháng** | Script sinh PPTX + skill `board-management-pack` | Từ số đã đối chiếu, tự dựng slide: tóm tắt điều hành, KPI, cầu nối EBITDA, theo BU, tiền, rủi ro, đề xuất nghị quyết; bình luận biến động có nguyên nhân | Dữ liệu từ pipeline/dashboard | Mỗi tháng, mỗi quý | 1–2 phiên |
+| 4 | ✅ **Bộ tạo báo cáo HĐQT / báo cáo quản trị tháng** — đã xây: `tools/board-pack/` (`afi boardpack`) | Script sinh PPTX + skill `board-management-pack` | Từ số đã đối chiếu, tự dựng slide: tóm tắt điều hành, KPI, cầu nối EBITDA, theo BU, tiền, rủi ro, đề xuất nghị quyết; bình luận biến động có nguyên nhân | Dữ liệu từ pipeline/dashboard | Mỗi tháng, mỗi quý | 1–2 phiên |
 
 ## Đợt 2 — Quý 1/2027: kiểm soát tài chính
 

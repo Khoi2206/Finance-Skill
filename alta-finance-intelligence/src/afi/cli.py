@@ -5,6 +5,7 @@
   afi reconcile              run control matrix, write data/dq/dq_report.md
   afi status                 list extractions in the manifest
   afi pl --company APL --month 2026-10 [--lineage net_revenue]
+  afi boardpack --month 2026-10 [--mode month|ytd] [--plan plan.csv]   board pack PPTX (tools/board-pack)
 """
 from __future__ import annotations
 
@@ -29,6 +30,10 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("reconcile")
     sub.add_parser("status")
     p = sub.add_parser("pl"); p.add_argument("--company"); p.add_argument("--month"); p.add_argument("--lineage")
+    p = sub.add_parser("boardpack", help="board pack PPTX (tools/board-pack)")
+    p.add_argument("--month", required=True); p.add_argument("--mode", choices=["month", "ytd"], default="month")
+    p.add_argument("--plan", type=Path); p.add_argument("--out", type=Path)
+    p.add_argument("--threshold-pct", type=float, default=0.10); p.add_argument("--threshold-amount", type=float, default=500e6)
     a = ap.parse_args(argv)
 
     if a.cmd == "ingest":
@@ -67,6 +72,18 @@ def main(argv: list[str] | None = None) -> int:
             print(f"\nLineage: {a.lineage}")
             for fn, row, amt in wh.lineage(a.lineage, a.company, a.month):
                 print(f"  {fn} · row {row}: {amt:,.0f}")
+    elif a.cmd == "boardpack":
+        tool = ROOT.parent / "tools" / "board-pack"
+        if not tool.exists():
+            print(f"Không tìm thấy công cụ board pack tại {tool}", file=sys.stderr)
+            return 2
+        sys.path.insert(0, str(tool))
+        from boardpack.cli import main as boardpack_main  # noqa: PLC0415
+        args = ["--month", a.month, "--mode", a.mode, "--data", str(a.data),
+                "--threshold-pct", str(a.threshold_pct), "--threshold-amount", str(a.threshold_amount)]
+        args += ["--plan", str(a.plan)] if a.plan else []
+        args += ["--out", str(a.out)] if a.out else []
+        return boardpack_main(args)
     return 0
 
 

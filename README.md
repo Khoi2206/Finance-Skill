@@ -3,10 +3,11 @@
 Thư viện skill cho Claude (Claude Code, Claude.ai, Cowork) để Khôi đảm nhiệm hai vai trò:
 **Giám đốc Tài chính (CFO)** và **Giám đốc Chiến lược & Phát triển (Strategy & Development Director)**.
 
-- `core/` — **9 skill lõi** viết riêng cho Alta Group (tiếng Việt, VAS/thuế VN, 3 pháp nhân Mẹ/Plastic/Media).
+- `core/` — **10 skill lõi** viết riêng cho Alta Group (tiếng Việt, VAS/thuế VN, 3 pháp nhân Mẹ/Plastic/Media).
 - `library/` — **92 skill tuyển chọn** từ 8 repo GitHub mã nguồn mở (MIT/Apache-2.0), chia 10 nhóm nghiệp vụ. Mỗi skill có `SOURCE.md` (nguồn) và `LICENSE.txt`.
 - `CATALOG.md` — danh mục đầy đủ, mô tả, nguồn, giấy phép; kèm các repo đã rà soát nhưng chưa nhập.
 - `PLAN.md` — lộ trình 90 ngày dùng bộ skill này trong công việc.
+- `dashboard/` — **Alta CFO · CEO Dashboard**: kéo thả file xuất từ FAST Business → dashboard CEO/CFO/Bán hàng, kiểm tra đối chiếu, truy xuất ngược từng con số về chứng từ gốc. Xem `dashboard/README.md`.
 
 ## Bắt đầu nhanh
 

@@ -409,7 +409,7 @@ Unchanged from v1.0: source preservation, idempotent ingestion, incremental and 
 | 0 | Genuine samples, layout fingerprints, dictionaries, raw manifest, registry, first parsers and controls | `alta-finance-intelligence/` Phase 0 code + tests; dashboard prototype | Finance confirms layout and grain for each sample | **Code done on synthetic fixtures; waiting for real samples** |
 | 1 | GL, TB, sales list, purchase list, COA, parties for 3 entities × Jan 2025 → latest month | Staging + gold MVP; DQ report per entity × month | All P0 controls pass or documented | Not started |
 | 2 | Management P&L, BS, cash (historical), working capital, intercompany; gold data pack → dashboard | CEO/CFO dashboards on gold data | CFO reconciles statements and signs policies (§13) | Prototype only |
-| 3 | 13W cash: bank snapshot, open AR/AP, commitments, loan schedules, scenarios | 13W Base/Downside + variance | CFO approves opening cash, floor and assumptions | Not started |
+| 3 | 13W cash: bank snapshot, open AR/AP, commitments, loan schedules, scenarios | 13W Base/Downside + variance | CFO approves opening cash, floor and assumptions | **Model built (`afi cash13w`, `tools/cash-13w/`) on synthetic data; waiting for bank snapshots, open AR/AP, loan schedules** |
 | 4 | Inventory, costing, Media jobs, fixed assets | BU economics | BU owners + CFO confirm mapping | Not started |
 | 5 | FY2026 forecast, Budget 2027 drivers and scenarios | Planning model | CEO decision log | Not started |
 | 6 | Automation, PostgreSQL, monitoring, deployment | Production system | IT/security review | Not started |
@@ -480,6 +480,7 @@ Phase 0, 1 and 3 criteria are unchanged from v1.0. Phase 0 additionally requires
 | Physical data dictionary generator | `dictionary.py` | Implemented |
 | Control matrix → status per entity × period | `reconciliations/controls.py` | File totals, GL balance, TB integrity, TB↔GL, revenue bridge |
 | Gold views + lineage query | `models/warehouse.py` | P&L lines by entity × month with source rows |
+| 13-week cash (Phase 3): inputs → DATA REQUIRED, Base/Downside, actuals from GL, versions + variance, Excel/JSON, viewer | `forecasts/cash13w*.py`, `tools/cash-13w/` | Implemented + tested on synthetic data |
 | Genuine ALTA samples | — | **Missing: blocks Phase 0 sign-off** |
 
 **End of implementation brief.**

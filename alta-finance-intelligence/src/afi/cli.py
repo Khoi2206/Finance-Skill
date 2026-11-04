@@ -5,10 +5,15 @@
   afi reconcile              run control matrix, write data/dq/dq_report.md
   afi status                 list extractions in the manifest
   afi pl --company APL --month 2026-10 [--lineage net_revenue]
+  afi cash13w --inputs DIR [--start 2026-11-09] [--out DIR] [--no-save]
+                             13-week direct cash forecast (Base/Downside), saved as a version
+  afi cash13w --templates DIR      write empty CSV templates + params.yaml
+  afi cash13w --write-sample DIR   write a synthetic sample (inputs for 2 Mondays + FAST-style GL)
 """
 from __future__ import annotations
 
 import argparse
+import datetime as dt
 import sys
 from pathlib import Path
 
@@ -29,6 +34,14 @@ def main(argv: list[str] | None = None) -> int:
     sub.add_parser("reconcile")
     sub.add_parser("status")
     p = sub.add_parser("pl"); p.add_argument("--company"); p.add_argument("--month"); p.add_argument("--lineage")
+    p = sub.add_parser("cash13w", help="13-week cash forecast")
+    p.add_argument("--inputs", type=Path, help="folder with bank_balances.csv, ar_open.csv, ... params.yaml")
+    p.add_argument("--start", help="Monday of forecast week 1 (default: Monday of this week)")
+    p.add_argument("--params", type=Path, help="params.yaml (default: <inputs>/params.yaml)")
+    p.add_argument("--out", type=Path, help="output folder for .xlsx and .json (default: <data>/forecasts/cash13w/out)")
+    p.add_argument("--no-save", action="store_true", help="do not store this run as a forecast version")
+    p.add_argument("--templates", type=Path, help="write empty input templates to this folder and exit")
+    p.add_argument("--write-sample", type=Path, help="write a synthetic sample to this folder and exit")
     a = ap.parse_args(argv)
 
     if a.cmd == "ingest":
@@ -67,6 +80,50 @@ def main(argv: list[str] | None = None) -> int:
             print(f"\nLineage: {a.lineage}")
             for fn, row, amt in wh.lineage(a.lineage, a.company, a.month):
                 print(f"  {fn} · row {row}: {amt:,.0f}")
+    elif a.cmd == "cash13w":
+        return _cash13w(a)
+    return 0
+
+
+def _cash13w(a) -> int:
+    from .forecasts import cash13w as cf
+    from .forecasts.cash13w_excel import write_excel
+
+    start = dt.date.fromisoformat(a.start) if a.start else cf.monday_of(dt.date.today())
+    if a.templates:
+        for p in cf.write_templates(a.templates):
+            print(p)
+        return 0
+    if a.write_sample:
+        from .forecasts.cash13w_sample import write_sample
+        s = write_sample(a.write_sample, start)
+        print(f"DỮ LIỆU MẪU (tổng hợp) → {a.write_sample}")
+        print(f"  inputs tuần trước: {s['inputs_prior']}\n  inputs tuần này:   {s['inputs']}")
+        for g in s["gl"]:
+            print(f"  GL: {g}")
+        return 0
+    if not a.inputs:
+        print("cần --inputs DIR (hoặc --templates / --write-sample)", file=sys.stderr)
+        return 2
+    res = cf.build(a.inputs, start, data=a.data, params_path=a.params)
+    out = a.out or cf.versions_dir(a.data) / "out"
+    stem = res["version_id"]
+    x = write_excel(res, out / f"{stem}.xlsx")
+    j = cf.write_json(res, out / f"{stem}.json")
+    if not a.no_save:
+        print(f"version saved: {cf.save_version(res, a.data)}")
+    print(f"{'[MẪU] ' if res['sample'] else ''}{res['version_id']} · {res['status_label']}")
+    print(f"Excel: {x}\nJSON:  {j}")
+    for co, v in res["views"].items():
+        for sc in ("base", "downside"):
+            s = v["scenarios"][sc]
+            mh = "n/a" if s["min_headroom"] is None else f"{s['min_headroom']:,.0f}"
+            br = ",".join(map(str, s["breach_weeks"])) or "-"
+            print(f"  {co:<6} {sc:<8} đầu kỳ {s['opening'][0]:>18,.0f} · thấp nhất {s['min_closing']:>18,.0f} (T{s['min_closing_week']}) · headroom min {mh:>16} · dưới ngưỡng: {br}")
+    blocking = sum(1 for i in res["data_required"] if i["severity"] == "LOAI_TRU")
+    print(f"DATA REQUIRED: {len(res['data_required'])} ({blocking} loại khỏi dự báo)")
+    c = res["comparison"]
+    print(f"So sánh: {c.get('prior_version_id') or c.get('message')}")
     return 0
 
 

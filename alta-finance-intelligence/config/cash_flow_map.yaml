@@ -1,12 +1,13 @@
 # [PROPOSED POLICY] — classification of GL lines on cash accounts by contra account.
 # Longest matching prefix wins. Unmatched → UNCLASSIFIED (never hidden).
-version: "2026-11-04.1"
+version: "2026-11-04.2"  # .2: thêm INTEREST_PAID (635) cho dòng tiền 13 tuần
 status: PROPOSED
 cash_accounts: ["111", "112", "113"]
 categories:
   - {id: INTERNAL_TRANSFER, activity: none,      prefixes: ["111", "112", "113"]}
   - {id: CUSTOMER_COLLECTIONS, activity: operating, prefixes: ["131"]}
   - {id: DIRECT_SALES,      activity: operating, prefixes: ["511", "3331", "521"]}
+  - {id: INTEREST_PAID,     activity: operating, prefixes: ["635"]}
   - {id: SUPPLIER_EXPENSE,  activity: operating, prefixes: ["331", "15", "133", "6", "242"]}
   - {id: PAYROLL,           activity: operating, prefixes: ["334"]}
   - {id: SOCIAL_OTHER_PAYABLES, activity: operating, prefixes: ["338", "335", "344"]}

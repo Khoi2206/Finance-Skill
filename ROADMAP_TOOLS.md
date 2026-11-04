@@ -18,7 +18,7 @@ Dạng công cụ:
 |---|---|---|---|---|---|---|
 | 1 | **Mô hình Dự báo 2026 & Ngân sách 2027 theo driver** | Excel do script sinh + skill | Plastic: sản lượng × giá bán × giá hạt nhựa; Media: số job/backlog × giá trị × biên; Mẹ: diện tích × đơn giá. 3 kịch bản, ba báo cáo liên kết, hợp nhất loại trừ nội bộ | Số thực tế 9T (pipeline), giả định BU | Mỗi quý cập nhật rolling forecast; mỗi năm làm ngân sách | 2–3 phiên |
 | 2 | **Bộ thu thập giả định ngân sách từ BU** | Trang web có lưu dữ liệu dùng chung | Mỗi trưởng BU điền giả định (khách hàng lớn, sản lượng, giá, nhân sự, capex) vào một form; CFO thấy ai đã nộp, ai chưa, chênh lệch so với định hướng top-down | Danh sách BU, mẫu giả định | Mỗi mùa ngân sách | 1 phiên |
-| 3 | **Dòng tiền 13 tuần** (Phase 3 của đặc tả) | Trang web + Excel | Tiền đầu kỳ đã đối chiếu ngân hàng, công nợ phải thu/trả theo hóa đơn, lịch trả nợ, lương, thuế, capex; Base/Downside; so thực tế với dự báo tuần trước | Sao kê, công nợ, lịch vay | Mỗi thứ Hai | 2 phiên |
+| 3 | ✅ **Dòng tiền 13 tuần** (Phase 3 của đặc tả) — *đã xây 2026-11-04: `afi cash13w` + `tools/cash-13w/cash13w.html`; chờ sao kê, công nợ, lịch vay thật* | Trang web + Excel | Tiền đầu kỳ đã đối chiếu ngân hàng, công nợ phải thu/trả theo hóa đơn, lịch trả nợ, lương, thuế, capex; Base/Downside; so thực tế với dự báo tuần trước | Sao kê, công nợ, lịch vay | Mỗi thứ Hai | 2 phiên |
 | 4 | **Bộ tạo báo cáo HĐQT / báo cáo quản trị tháng** | Script sinh PPTX + skill `board-management-pack` | Từ số đã đối chiếu, tự dựng slide: tóm tắt điều hành, KPI, cầu nối EBITDA, theo BU, tiền, rủi ro, đề xuất nghị quyết; bình luận biến động có nguyên nhân | Dữ liệu từ pipeline/dashboard | Mỗi tháng, mỗi quý | 1–2 phiên |
 
 ## Đợt 2 — Quý 1/2027: kiểm soát tài chính
@@ -61,7 +61,7 @@ Dạng công cụ:
 
 1. `Đọc ROADMAP_TOOLS.md mục #1 và core/strategic-plan-budget. Xây mô hình Dự báo 2026 & Ngân sách 2027 theo driver cho Alta (Mẹ, Plastic, Media), script Python sinh file Excel có công thức, 3 kịch bản, hợp nhất loại trừ nội bộ. Dùng dữ liệu mẫu nếu chưa có số thật, ghi rõ là mẫu.`
 2. `Xây công cụ #2 trong ROADMAP_TOOLS.md: trang web thu thập giả định ngân sách 2027 từ các trưởng BU, lưu dữ liệu dùng chung, có trang tổng hợp cho CFO.`
-3. `Xây công cụ #3: dòng tiền 13 tuần theo docs/ALTA_FAST_Data_Architecture v1.1 §8.3 và core/cash-13-week-treasury, đầu vào từ alta-finance-intelligence.`
+3. ✅ Đã xong. Chạy hằng tuần: `Chạy dòng tiền 13 tuần cho tuần bắt đầu <ngày>: afi cash13w với thư mục đầu vào <…>, tóm tắt 5 dòng theo core/cash-13-week-treasury và liệt kê DATA REQUIRED theo người phụ trách.`
 4. `Xây công cụ #4: script sinh báo cáo HĐQT PPTX hằng tháng theo core/board-management-pack từ số liệu của pipeline.`
 5. `Xây công cụ #5 và #8: sổ theo dõi nợ vay & covenant (trang web có lưu dữ liệu) và skill đọc hợp đồng vay vào sổ.`
 6. `Xây công cụ #6: trang theo dõi đóng sổ tháng cho phòng kế toán theo checklist trong core/vn-finance-compliance.`

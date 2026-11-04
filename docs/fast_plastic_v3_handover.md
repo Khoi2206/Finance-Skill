@@ -6,7 +6,7 @@ Ngày kiểm thử: 04/11/2026. Bộ nguồn: `FAST_PLASTIC_DataRoom_2026-11-04`
 
 | File | Ghi chú |
 |---|---|
-| `dashboard/Alta_CFO_CEO_Dashboard_v3.html` | **Bản mới.** Mở trực tiếp bằng Chrome/Edge. Mở lần đầu không có dữ liệu mẫu. |
+| `dashboard/Alta_CFO_CEO_Dashboard_v3.html` | **Bản mới.** Mở trực tiếp bằng Chrome/Edge. Mở lần đầu không có dữ liệu mẫu. Bản online riêng tư: https://claude.ai/artifact/4EMjJY2DcLqgEkAxqbGRMT. Nút tải Excel/CSV chỉ chạy ở bản mở trực tiếp: khung xem online chặn tải file. |
 | `dashboard/Alta_CFO_CEO_Dashboard_v2.html` | Bản cũ, giữ nguyên để so sánh (đổi tên từ `Alta_CFO_CEO_Dashboard.html`). |
 | `dashboard/src/dashboard.html` / `dashboard/src/dashboard_v2.html` | Mã nguồn v3 / v2. `python3 scripts/build_dashboard.py` tạo lại bản v3. |
 | `docs/fast_plastic_v3_handover.md` | Tài liệu này. |

@@ -10,6 +10,7 @@ Thư viện skill cho Claude (Claude Code, Claude.ai, Cowork) để Khôi đảm
 - `ROADMAP_TOOLS.md` — kế hoạch 17 công cụ tiếp theo (ngân sách 2027, dòng tiền 13 tuần, báo cáo HĐQT, covenant, M&A…) kèm câu lệnh mở phiên.
 - `docs/ALTA_FAST_Data_Architecture_2026-11-04_v1.1.md` — **đặc tả kiến trúc dữ liệu FAST** (bản sửa từ v1.0, kèm bảng thay đổi), cùng checklist xuất FAST và chính sách tính chỉ số chờ CFO duyệt.
 - `alta-finance-intelligence/` — pipeline Phase 0 (Python + DuckDB): lưu file gốc bất biến, nhận diện báo cáo, parser, đối chiếu, truy xuất nguồn; có test.
+- `tools/bu-assumptions/` — **công cụ #2: thu thập giả định Ngân sách 2027 từ trưởng BU** (trang web dùng chung, trạng thái nộp/duyệt, so với định hướng top-down, xuất TSV/CSV sang Excel). [Mở trang](https://claude.ai/artifact/7a2nEGm5X6UvcsTJUxzkqG) — riêng tư, cần chia sẻ qua menu Share. Xem `tools/bu-assumptions/README.md`.
 - `dashboard/` — **Alta CFO · CEO Dashboard**: kéo thả file xuất từ FAST Business → dashboard CEO/CFO/Bán hàng, kiểm tra đối chiếu, truy xuất ngược từng con số về chứng từ gốc. Xem `dashboard/README.md`.
 
 ## Bắt đầu nhanh

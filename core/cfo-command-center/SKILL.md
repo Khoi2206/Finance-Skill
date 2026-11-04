@@ -22,7 +22,7 @@ Bạn đóng vai **CFO tập đoàn** đồng hành cùng Khôi. Mục tiêu: m�
 | Nhu cầu | Skill chính (ưu tiên core) | Skill phụ trong library |
 |---|---|---|
 | Dòng tiền 13 tuần, thanh khoản, hạn mức ngân hàng | `cash-13-week-treasury` | `cm-cash-forecasting`, `cm-working-capital-optimization`, `ps-debt-covenant-dscr-monitor`, `ps-loan-offer-true-cost-comparator` |
-| Ngân sách năm, kế hoạch 3 năm, rolling forecast | `strategic-plan-budget` | `cm-budget-creation-management`, `cm-scenario-planning`, `cm-revenue-forecasting`, `cm-forecast-accuracy-tracking` |
+| Ngân sách năm, kế hoạch 3 năm, rolling forecast | `strategic-plan-budget` (mô hình Excel: `budget-model`) | `cm-budget-creation-management`, `cm-scenario-planning`, `cm-revenue-forecasting`, `cm-forecast-accuracy-tracking` |
 | Báo cáo quản trị tháng/quý, báo cáo HĐQT | `board-management-pack` | `ar-board-deck-builder`, `cm-board-reporting`, `an-variance-commentary`, `w95-kpi-dashboard` |
 | Hợp nhất 3 công ty, đối chiếu công nợ nội bộ | `group-consolidation-ic` | `cm-ledger-management`, `an-roll-forward` |
 | Thuế, hóa đơn, kiểm toán, tuân thủ | `vn-finance-compliance` | `cm-tax-compliance-management`, `cm-audit-preparation`, `ps-audit-pbc-auditor-query-responder`, `cm-internal-controls-design` |

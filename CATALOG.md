@@ -1,6 +1,6 @@
 # Danh mục skill (CATALOG)
 
-Tổng: **10 skill lõi** (tự viết cho Alta Group, thư mục `core/`) + **92 skill tuyển chọn** từ GitHub (thư mục `library/`).
+Tổng: **11 skill lõi** (tự viết cho Alta Group, thư mục `core/`) + **92 skill tuyển chọn** từ GitHub (thư mục `library/`).
 
 Tiền tố tên = nguồn: `ar` alirezarezvani/claude-skills · `cm` gokulsvision/crewm8-cfo-skills · `ps` parinshahAIbuilder/cfo-agent-skills · `an` anthropics/financial-services-plugins · `w95` w95/awesome-claude-corporate-skills · `wd` wondelai/skills · `fs` Jakeschincariol/founder-skill · `ev` EveryInc/charlie-cfo-skill.
 
@@ -16,6 +16,7 @@ Tiền tố tên = nguồn: `ar` alirezarezvani/claude-skills · `cm` gokulsvisi
 | `investment-appraisal` | Cả hai | NPV/IRR, WACC VN, tờ trình đầu tư |
 | `corp-dev-ma-vn` | Chiến lược | M&A, góp vốn, gọi vốn, DD, IC memo |
 | `strategic-plan-budget` | Cả hai | Kế hoạch 3 năm, ngân sách, OKR/BSC, rolling forecast |
+| `budget-model` | CFO | Chạy/cập nhật mô hình Excel Dự báo & Ngân sách theo driver (`tools/budget-model`), kiểm tra trước khi trình HĐQT |
 | `board-management-pack` | Cả hai | Báo cáo quản trị tháng/quý, board pack |
 | `fast-erp-dashboard` | Cả hai | Vận hành/mở rộng dashboard CEO–CFO từ dữ liệu FAST Business |
 

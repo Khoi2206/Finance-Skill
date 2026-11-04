@@ -96,6 +96,23 @@ class Warehouse:
             base[name] = eval(expr, {"__builtins__": {}}, dict(base))  # expressions come from reviewed config
         return base
 
+    def export_pl_csv(self, out, year: str | None = None) -> int:
+        """Write mart_pl_monthly as CSV (company,month,line,amount; amount in VND, base lines only).
+        This is the actuals input format of tools/budget-model."""
+        import csv
+        q = "SELECT company_id, month, line, sum(amount) FROM mart_pl_monthly"
+        args = []
+        if year:
+            q += " WHERE substr(month,1,4)=?"
+            args.append(str(year))
+        rows = self.con.execute(q + " GROUP BY ALL ORDER BY 1,2,3", args).fetchall()
+        with open(out, "w", newline="", encoding="utf-8") as f:
+            w = csv.writer(f)
+            w.writerow(["company", "month", "line", "amount"])
+            for c, m, line, amt in rows:
+                w.writerow([c, m, line, round(amt)])
+        return len(rows)
+
     def lineage(self, line: str, company: str, month: str) -> list[tuple]:
         """Source rows behind one P&L line: (file, Excel row, amount)."""
         return self.con.execute("SELECT source_filename, source_row_number, amount FROM pl_lines_lineage WHERE line=? AND company_id=? AND month=? ORDER BY abs(amount) DESC",

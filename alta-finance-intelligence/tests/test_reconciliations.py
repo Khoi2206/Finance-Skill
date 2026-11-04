@@ -73,3 +73,14 @@ def test_depreciation_uses_expense_contra_only(files, data, tmp_path):
     wb.save(f2)
     Pipeline(data).ingest(f2)
     assert Warehouse(data).pl("APL", "2026-10")["depreciation"] == 50_000_000
+
+
+def test_export_pl_csv_for_budget_model(files, data, tmp_path):
+    import csv
+    wh = _load(files, data)
+    out = tmp_path / "actuals.csv"
+    assert wh.export_pl_csv(out, "2026") > 0
+    rows = list(csv.DictReader(out.open(encoding="utf-8")))
+    assert set(rows[0]) == {"company", "month", "line", "amount"}
+    rev = sum(float(r["amount"]) for r in rows if r["company"] == "APL" and r["month"] == "2026-10" and r["line"] == "net_revenue")
+    assert rev == 1_200_000_000

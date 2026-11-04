@@ -319,7 +319,7 @@ Statement schemas as in v1.0. Draft policies for CFO approval (`docs/accounting_
 | Closing entries | Exclude every GL line whose account or contra account starts with 911 from P&L facts | CFO |
 | Net revenue | Credit − debit on 511 and 521 | CFO |
 | Interest expense | 635 lines whose description contains "lãi vay / lãi tiền vay" or whose contra is 335/341/3388/311 | CFO (confirm sub-accounts) |
-| EBITDA | Profit before tax + interest expense + depreciation (credit movement on 214) | CFO (same rule for all three entities, or documented exceptions) |
+| EBITDA | Profit before tax + interest expense + depreciation charged to P&L = **credit − debit on 214 whose contra account is 6xx, 154 or 632** (not the net 214 movement; disposals, transfers and adjustments are shown separately). Months without journal detail show "Chưa đủ dữ liệu" | CFO (same rule for all three entities, or documented exceptions) |
 | Consolidation (management) | Sum entities; eliminate intercompany revenue (511 lines with a group MST counterparty) against cost of sales; eliminate intercompany interest (515 vs 635). Unrealized profit in inventory not yet eliminated | CFO |
 | Intercompany balances | Counterparty balances on 131/331/136/336/138/338/341/128 must offset pairwise; difference → exception list | Chief Accountant |
 | Working-capital days | DSO = AR ÷ (3-month revenue × 1.1) × 91; DIO = inventory ÷ 3-month COGS × 91; DPO = AP ÷ (3-month COGS × 1.1) × 91 | CFO |
@@ -483,3 +483,6 @@ Phase 0, 1 and 3 criteria are unchanged from v1.0. Phase 0 additionally requires
 | Genuine ALTA samples | — | **Missing: blocks Phase 0 sign-off** |
 
 **End of implementation brief.**
+
+### Addendum 2026-11-04 — AR/AP by invoice, fixed assets, inventory
+Additional source reports and columns: `docs/fast_export_requirements_v2.md`. Dashboard pages Công nợ, TSCĐ, Tồn kho implemented with drill-down to file/sheet/row; ageing uses only FAST due dates; slow-moving inventory requires ≥ 3 consecutive monthly NXT files. Pipeline `account_map.yaml` v2026-11-04.2 applies the new depreciation rule (test: `test_depreciation_uses_expense_contra_only`). Parsers for these four reports exist in the dashboard only; pipeline parsers are Phase 1–4 work.

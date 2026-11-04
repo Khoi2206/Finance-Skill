@@ -49,3 +49,27 @@ def test_pl_excludes_closing_entries_and_lineage_ties_out(files, data):
     rows = wh.lineage("net_revenue", "APL", "2026-10")
     assert sum(a for _, _, a in rows) == p["net_revenue"]
     assert all(fn.startswith("NKC 2026-10") and r >= 8 for fn, r, _ in rows)
+
+
+def test_depreciation_uses_expense_contra_only(files, data, tmp_path):
+    """Disposal (Dr 214 / Cr 211) must not reduce depreciation used for EBITDA."""
+    import openpyxl
+    wh = _load(files, data)
+    assert wh.pl("APL", "2026-10")["depreciation"] == 50_000_000
+    wb = openpyxl.load_workbook(files["gl"])
+    ws = wb.active
+    last = ws.max_row  # 'Tổng cộng' row
+    ws.insert_rows(last)
+    for i, row in enumerate([[fx.D(30), "TL01", "Thanh lý máy", "2141", "211", 40_000_000, None],
+                             [fx.D(30), "TL01", "Thanh lý máy", "211", "2141", None, 40_000_000]]):
+        if i:
+            ws.insert_rows(last + 1)
+        for j, v in enumerate(row, start=1):
+            ws.cell(last + i, j, v)
+    tot = last + 2
+    ws.cell(tot, 6, ws.cell(tot, 6).value + 40_000_000)
+    ws.cell(tot, 7, ws.cell(tot, 7).value + 40_000_000)
+    f2 = tmp_path / "NKC 2026-10 - Alta Plastic (v2).xlsx"
+    wb.save(f2)
+    Pipeline(data).ingest(f2)
+    assert Warehouse(data).pl("APL", "2026-10")["depreciation"] == 50_000_000

@@ -37,6 +37,10 @@ FAST Business ──(Kết xuất Excel)──► 3 loại báo cáo × 3 công 
 | 2 | **Bảng cân đối số phát sinh các tài khoản** (chi tiết cấp thấp nhất) | Tháng | Có | Số dư cuối tháng, đối chiếu với sổ NKC |
 | 3 | **Bảng kê hóa đơn bán hàng, dịch vụ** | Tháng | Nên có | Mảng doanh thu, khách hàng, điểm kiểm soát hóa đơn |
 | 4 | Bảng kê mua hàng | Tháng | Tùy chọn | (dự phòng mở rộng) |
+| 6 | Bảng tổng hợp công nợ phải thu / phải trả | Tháng | Nên có | Trang Công nợ: dư đầu, phát sinh, thanh toán, dư cuối theo đối tượng; đối chiếu TK 131/331 |
+| 7 | Công nợ theo hóa đơn (có Hạn thanh toán) | Cuối tháng | Nên có | Hóa đơn còn dư, số ngày quá hạn, tuổi nợ |
+| 8 | Bảng tính và phân bổ khấu hao TSCĐ | Tháng | Nên có | Trang TSCĐ; đối chiếu TK 211–213/214; khấu hao theo tài sản/bộ phận/tháng |
+| 9 | Nhập – xuất – tồn theo kho/mã hàng | Tháng, ≥ 3 tháng liên tiếp | Nên có | Trang Tồn kho; hàng chậm luân chuyển; đối chiếu TK 15x |
 | 5 | File kế hoạch (mẫu 4 cột: Công ty, Chỉ tiêu, Tháng, Kế hoạch) | Năm | Tùy chọn | So sánh % kế hoạch |
 
 Lần đầu: xuất thêm sổ NKC + CĐPS **từ tháng 1 năm trước** để có số cùng kỳ và số dư đầu kỳ.
@@ -68,3 +72,10 @@ Xem trang **Quy trình** trong dashboard (bảng “Định nghĩa chỉ số”
 - Thêm chỉ số: sửa bảng `PL` / `BAL` / `CF_CAT` trong `src/dashboard.html`.
 - Thêm quy tắc phân mảng doanh thu: hàm `segOf()` (đồng bộ với skill `alta-sales-report`).
 - Nhờ Claude: dùng skill `fast-erp-dashboard`.
+
+## 6. Bổ sung 2026-11-04 (đợt 2)
+- Trang mới: **Công nợ** (phải thu/phải trả theo đối tượng và hóa đơn, tuổi nợ theo hạn thanh toán FAST, đối chiếu TK 131/331), **TSCĐ** (cộng dồn nguyên giá/hao mòn, biến động TK 214 tách khấu hao/thanh lý/điều chuyển/điều chỉnh, khấu hao theo tháng/bộ phận/tài sản), **Tồn kho** (theo mã/kho, hàng chậm luân chuyển, đối chiếu TK 15x).
+- EBITDA chỉ cộng lại khấu hao vào chi phí (Có 214 đối ứng 6xx/154/632); thiếu sổ NKC chi tiết → “Chưa đủ dữ liệu”.
+- Bỏ tuổi nợ FIFO ước tính. Chỉ tiêu thiếu nguồn hiển thị “Chưa đủ dữ liệu”.
+- Trang Dữ liệu có bảng **Chức năng × dữ liệu nguồn** cho biết chức năng nào đã có dữ liệu thật/mẫu, và cột “Thiếu cột” cho từng file.
+- Danh sách báo cáo/cột: `docs/fast_export_requirements_v2.md`.

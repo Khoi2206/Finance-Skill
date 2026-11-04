@@ -72,6 +72,8 @@ class Warehouse:
         parts = []
         for line, spec in self.accounts["pl_lines"].items():
             cond = " OR ".join(f"starts_with(account_code,'{p}')" for p in spec["prefixes"])
+            if spec.get("contra_prefixes"):
+                cond = f"({cond}) AND (" + " OR ".join(f"starts_with(coalesce(contra_account_code,''),'{p}')" for p in spec["contra_prefixes"]) + ")"
             val = "credit - debit" if spec["side"] == "cn" else "debit - credit"
             parts.append(f"SELECT company_id, month, '{line}' AS line, {spec['sign']} * ({val}) AS amount, extraction_id, source_filename, source_row_number "
                          f"FROM fact_gl_lines WHERE ({cond}) AND {ex}")

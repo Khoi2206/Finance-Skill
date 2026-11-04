@@ -15,6 +15,9 @@ Hệ thống nằm trong repo `finance-skill`, thư mục `dashboard/`:
 - Pipeline: `alta-finance-intelligence/` (`afi dictionary | ingest | reconcile | pl`). Với file thật, chạy `afi dictionary` trước, đối chiếu tên cột với `config/report_registry.yaml`, không tự đoán ánh xạ.
 - Chính sách chờ duyệt: `docs/accounting_policies.md`; checklist xuất: `docs/fast_export_checklist.md`.
 
+## Báo cáo bổ sung (đợt 2)
+Công nợ theo đối tượng/hóa đơn, TSCĐ & khấu hao, Nhập – xuất – tồn: xem `docs/fast_export_requirements_v2.md`. Quy tắc: khấu hao cho EBITDA = Có 214 đối ứng 6xx/154/632; tuổi nợ chỉ theo hạn TT do FAST xuất; hàng chậm luân chuyển cần ≥ 3 tháng NXT liên tiếp; thiếu nguồn → “Chưa đủ dữ liệu”, không tự suy ra.
+
 ## Khi Khôi đưa file FAST và hỏi số liệu
 1. Nếu chỉ cần xem: hướng dẫn kéo file vào trang **Dữ liệu** của dashboard (bản HTML hoặc artifact).
 2. Nếu cần Claude tự phân tích: đọc file bằng pandas, **dùng đúng công thức của dashboard** (bảng `PL`, `BAL`, `CF_CAT` trong `src/dashboard.html`) để số khớp với màn hình:

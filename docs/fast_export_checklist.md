@@ -11,6 +11,10 @@ Nguyên tắc: **chỉ xuất, không sửa** dữ liệu trên FAST. Không ch�
 | 2 | Bảng cân đối số phát sinh các tài khoản | 01 → ngày cuối tháng | Chi tiết đến **tài khoản cấp thấp nhất**; có số dư đầu, phát sinh, số dư cuối | `CDPS YYYY-MM - <Công ty>.xlsx` |
 | 3 | Bảng kê hóa đơn bán hàng, dịch vụ | 01 → ngày cuối tháng | Giữ mẫu đang dùng cho báo cáo bán hàng 9T/2026 | `Bang ke ban hang YYYY-MM - <Công ty>.xlsx` |
 | 4 | Bảng kê mua hàng | 01 → ngày cuối tháng | Như trên | `Bang ke mua hang YYYY-MM - <Công ty>.xlsx` |
+| 5 | Bảng tổng hợp công nợ phải thu / phải trả | 01 → ngày cuối tháng | TK 131 / 331, mọi tiểu khoản; dư đầu, phát sinh, dư cuối Nợ/Có theo đối tượng | `Cong no phai thu YYYY-MM - <Công ty>.xlsx` |
+| 6 | Công nợ phải thu / phải trả theo hóa đơn | Ngày cuối tháng | Cột **Hạn thanh toán** bắt buộc; số ngày quá hạn nếu có | `Cong no theo hoa don phai thu YYYY-MM - <Công ty>.xlsx` |
+| 7 | Bảng tính và phân bổ khấu hao TSCĐ | 01 → ngày cuối tháng | Nguyên giá đầu/tăng/giảm/cuối, khấu hao trong kỳ, hao mòn đầu/giảm/cuối, GTCL, bộ phận, nhóm | `TSCD YYYY-MM - <Công ty>.xlsx` |
+| 8 | Báo cáo tổng hợp nhập – xuất – tồn | 01 → ngày cuối tháng, liên tục | Theo kho và mã vật tư; SL + giá trị cho tồn đầu, nhập, xuất, tồn cuối | `NXT YYYY-MM - <Công ty>.xlsx` |
 
 `<Công ty>` viết đúng một trong: `Alta`, `Alta Plastic`, `Alta Media`.
 
@@ -29,3 +33,5 @@ Ngày giờ xuất · người xuất · công ty · tên báo cáo · mẫu bá
 ## 4. Sau khi nạp
 - Kiểm tra trang “Dữ liệu & đối chiếu” của dashboard hoặc chạy `afi reconcile`.
 - Mọi kiểm tra “Không đạt” phải có giải thích trước khi CFO duyệt kỳ.
+
+Chi tiết cột bắt buộc/nên có của mục 5–8: `docs/fast_export_requirements_v2.md`.

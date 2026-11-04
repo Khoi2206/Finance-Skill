@@ -1,7 +1,7 @@
 # [PROPOSED POLICY] — management P&L lines from VAS account prefixes. Requires CFO approval.
 # side: cn = credit - debit, nc = debit - credit. Lines whose account or contra account starts
 # with any prefix in exclude_contra are closing entries and are excluded from P&L facts.
-version: "2026-11-04.1"
+version: "2026-11-04.2"
 status: PROPOSED
 exclude_contra: ["911"]
 pl_lines:
@@ -14,7 +14,9 @@ pl_lines:
   other_income:     {prefixes: ["711"], side: cn, sign: 1}
   other_expense:    {prefixes: ["811"], side: nc, sign: 1}
   income_tax:       {prefixes: ["821"], side: nc, sign: 1}
-  depreciation:     {prefixes: ["214"], side: cn, sign: 1}
+  # Khấu hao vào chi phí: Có 214 đối ứng chi phí/giá thành. Không dùng biến động ròng TK 214
+  # (thanh lý, điều chuyển, điều chỉnh bị loại). Áp dụng từ 2026-11-04.2.
+  depreciation:     {prefixes: ["214"], side: cn, sign: 1, contra_prefixes: ["6", "154", "632"]}
 derived:
   gross_profit: "net_revenue - cogs"
   profit_before_tax: "net_revenue + finance_income + other_income - cogs - finance_expense - selling_expenses - admin_expenses - other_expense"

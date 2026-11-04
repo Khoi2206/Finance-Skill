@@ -34,7 +34,8 @@ body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset
 header.bar{position:sticky;top:env(safe-area-inset-top,0px);z-index:20;background:var(--surface);border-bottom:1px solid var(--line)}
 .bar-in{display:flex;flex-wrap:wrap;align-items:center;gap:10px 18px;padding-block:10px}
 .brand{display:flex;flex-direction:column;min-width:0;margin-right:auto}
-.brand b{font-size:16px;font-weight:700;letter-spacing:-.01em}
+.brand b{font-size:16px;font-weight:700;letter-spacing:-.01em;display:flex;flex-wrap:wrap;gap:4px 8px;align-items:center}
+.brand a.chip{text-decoration:none;font-weight:600;letter-spacing:.02em}
 .brand span{font-size:12px;color:var(--muted)}
 .ctl{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
 .seg{display:inline-flex;border:1px solid var(--line);border-radius:999px;padding:2px;background:var(--surface-2)}
@@ -117,7 +118,7 @@ pre.code{display:block;padding:10px 12px;white-space:pre;overflow-x:auto}
 
 <header class="bar">
   <div class="wrap bar-in">
-    <div class="brand"><b>Alta Group · Bảng điều hành CFO–CEO</b><span id="sub">Dữ liệu từ FAST Business · xử lý ngay trong trình duyệt, không tải lên máy chủ</span></div>
+    <div class="brand"><b>Alta Group · Bảng điều hành CFO–CEO <a id="dq" class="chip" href="#du-lieu" title="Trạng thái dữ liệu: bấm để xem kiểm tra đối chiếu"></a></b><span id="sub">Dữ liệu từ FAST Business · xử lý ngay trong trình duyệt, không tải lên máy chủ</span></div>
     <div class="ctl">
       <div class="seg" id="coSeg" role="group" aria-label="Phạm vi công ty"></div>
       <select id="selMonth" aria-label="Kỳ đến tháng"></select>
@@ -676,6 +677,8 @@ function render(){charts.splice(0).forEach(c=>{try{c.dispose()}catch(e){}});sync
  $$('#main tr[data-cust]').forEach(tr=>tr.onclick=()=>{const k=tr.dataset.cust,cs=scope(),ms=periodMonths();drillSales(x=>cs.includes(x.c)&&ms.includes(x.m)&&(String(x.kh).replace(/\D/g,'').slice(0,10)||x.kh)===k,'Hóa đơn bán cho '+k+' · '+perLbl(ms),'Các dòng bảng kê hóa đơn bán hàng của khách hàng (gộp theo MST gốc 10 số)')});
  $$('#main tr[data-ic]').forEach(tr=>tr.onclick=()=>{const [a,b]=tr.dataset.ic.split('|').map(Number);const m=S.f.m;const P=['131','331','136','336','138','338','1388','3388','341','128','244','344'];const rows=S.D.G.filter(x=>x.m<=m&&startsAny(x.tk,P)&&((x.c===a&&x.ic===b)||(x.c===b&&x.ic===a))).map(x=>({...x,v:x.c===a?x.no-x.co:x.no-x.co,grp:COS[x.c]+' · '+x.tk}));openDrill({title:'Công nợ nội bộ '+COS[a]+' ↔ '+COS[b],formula:'Nợ − Có các TK công nợ của dòng có mã đối tượng là công ty còn lại. Hai bên phải triệt tiêu (tổng = 0).',rows,value:null})});
  const cp=$('#cpTpl');if(cp)cp.onclick=()=>navigator.clipboard.writeText($('#tpl').textContent).then(()=>toast('Đã chép mẫu, dán vào Excel')).catch(()=>toast('Hãy bôi đen và chép thủ công'));
+ const dq=$('#dq'),ck=S.demo?[]:runChecks();const st=S.demo?['DỮ LIỆU MẪU','']:!ck.length?['PRELIMINARY · chưa đối chiếu','st-warn']:ck.some(c=>!c.ok&&!c.warn)?['RECONCILIATION_FAILED','st-crit']:['RECONCILED · chờ CFO duyệt','st-good'];
+ dq.textContent=st[0];dq.className='chip '+st[1];
  $('#sub').textContent=S.demo?'Đang xem dữ liệu mẫu · nạp file FAST ở trang Dữ liệu':`${S.files.length} file · ${fN(S.D.G.length)} dòng sổ · ${S.D.months.length? mLbl(S.D.months[0])+' – '+mLbl(S.D.months[S.D.months.length-1]):''}`}
 function tileDrill(id){const cs=scope(),ms=periodMonths(),m=S.f.m;const [t,k]=id.split(':');
  if(t==='pl')return dPL(k,cs,ms);if(t==='bal')return dBal(k,cs,m);

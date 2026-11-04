@@ -7,6 +7,8 @@ Thư viện skill cho Claude (Claude Code, Claude.ai, Cowork) để Khôi đảm
 - `library/` — **92 skill tuyển chọn** từ 8 repo GitHub mã nguồn mở (MIT/Apache-2.0), chia 10 nhóm nghiệp vụ. Mỗi skill có `SOURCE.md` (nguồn) và `LICENSE.txt`.
 - `CATALOG.md` — danh mục đầy đủ, mô tả, nguồn, giấy phép; kèm các repo đã rà soát nhưng chưa nhập.
 - `PLAN.md` — lộ trình 90 ngày dùng bộ skill này trong công việc.
+- `docs/ALTA_FAST_Data_Architecture_2026-11-04_v1.1.md` — **đặc tả kiến trúc dữ liệu FAST** (bản sửa từ v1.0, kèm bảng thay đổi), cùng checklist xuất FAST và chính sách tính chỉ số chờ CFO duyệt.
+- `alta-finance-intelligence/` — pipeline Phase 0 (Python + DuckDB): lưu file gốc bất biến, nhận diện báo cáo, parser, đối chiếu, truy xuất nguồn; có test.
 - `dashboard/` — **Alta CFO · CEO Dashboard**: kéo thả file xuất từ FAST Business → dashboard CEO/CFO/Bán hàng, kiểm tra đối chiếu, truy xuất ngược từng con số về chứng từ gốc. Xem `dashboard/README.md`.
 
 ## Bắt đầu nhanh

@@ -1,0 +1,21 @@
+# [PROPOSED POLICY] — classification of GL lines on cash accounts by contra account.
+# Longest matching prefix wins. Unmatched → UNCLASSIFIED (never hidden).
+version: "2026-11-04.1"
+status: PROPOSED
+cash_accounts: ["111", "112", "113"]
+categories:
+  - {id: INTERNAL_TRANSFER, activity: none,      prefixes: ["111", "112", "113"]}
+  - {id: CUSTOMER_COLLECTIONS, activity: operating, prefixes: ["131"]}
+  - {id: DIRECT_SALES,      activity: operating, prefixes: ["511", "3331", "521"]}
+  - {id: SUPPLIER_EXPENSE,  activity: operating, prefixes: ["331", "15", "133", "6", "242"]}
+  - {id: PAYROLL,           activity: operating, prefixes: ["334"]}
+  - {id: SOCIAL_OTHER_PAYABLES, activity: operating, prefixes: ["338", "335", "344"]}
+  - {id: TAXES,             activity: operating, prefixes: ["333"]}
+  - {id: ADVANCES_OTHER_RECEIVABLES, activity: operating, prefixes: ["141", "138", "244"]}
+  - {id: CAPEX,             activity: investing, prefixes: ["211", "212", "213", "217", "241"]}
+  - {id: INVESTMENTS_LENDING, activity: investing, prefixes: ["121", "128", "221", "222", "228"]}
+  - {id: INTEREST_DIVIDEND_RECEIVED, activity: investing, prefixes: ["515"]}
+  - {id: DISPOSALS_OTHER,   activity: investing, prefixes: ["711"]}
+  - {id: BORROWINGS,        activity: financing, prefixes: ["341", "311", "315", "343"]}
+  - {id: EQUITY_DIVIDENDS,  activity: financing, prefixes: ["411", "421", "419"]}
+  - {id: INTERCOMPANY,      activity: intercompany, prefixes: ["136", "336"]}

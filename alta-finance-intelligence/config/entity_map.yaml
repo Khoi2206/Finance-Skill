@@ -1,0 +1,26 @@
+# Legal entities (dim_company). Evidence: [ALTA OBSERVED] in sales lists 9M2026.
+entities:
+  ALTA:
+    name: "Alta (Mẹ)"
+    tax_code: "0301420079"
+    filename_patterns: ["alta$", "alta me$", "alta mẹ$"]
+  APL:
+    name: "Alta Plastic"
+    tax_code: "0312414944"
+    filename_patterns: ["alta plastic$", "plastic"]
+  AME:
+    name: "Alta Media"
+    tax_code: "0305904835"
+    filename_patterns: ["alta media$", "media"]
+# Business units are NOT legal entities. [ALTA VALIDATION REQUIRED]
+business_units:
+  APL-PACK: {entity: APL, name: "Bao bì nhựa"}
+  APL-RESIN: {entity: APL, name: "Thương mại hạt nhựa"}
+  APL-3D: {entity: APL, name: "In 3D", note: "No common-cost allocation without approved driver"}
+  AME-LED: {entity: AME, name: "Cho thuê màn hình LED", job_prefix: LED}
+  AME-BA: {entity: AME, name: "Thiết bị, giải pháp", job_prefix: BA}
+  AME-TTB: {entity: AME, name: "Cho thuê hệ thống đa phương tiện", job_prefix: TTB}
+  AME-DVK: {entity: AME, name: "Dịch vụ, chia doanh thu", job_prefix: DVK}
+  AME-TKL: {entity: AME, name: "Phần mềm, thiết kế", job_prefix: TKL}
+  ALTA-RENT: {entity: ALTA, name: "Cho thuê mặt bằng"}
+  ALTA-TECH: {entity: ALTA, name: "Thiết bị & dự án công nghệ"}

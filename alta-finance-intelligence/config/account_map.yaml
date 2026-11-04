@@ -1,0 +1,25 @@
+# [PROPOSED POLICY] — management P&L lines from VAS account prefixes. Requires CFO approval.
+# side: cn = credit - debit, nc = debit - credit. Lines whose account or contra account starts
+# with any prefix in exclude_contra are closing entries and are excluded from P&L facts.
+version: "2026-11-04.1"
+status: PROPOSED
+exclude_contra: ["911"]
+pl_lines:
+  net_revenue:      {prefixes: ["511", "521"], side: cn, sign: 1}
+  cogs:             {prefixes: ["632"], side: nc, sign: 1}
+  selling_expenses: {prefixes: ["641"], side: nc, sign: 1}
+  admin_expenses:   {prefixes: ["642"], side: nc, sign: 1}
+  finance_income:   {prefixes: ["515"], side: cn, sign: 1}
+  finance_expense:  {prefixes: ["635"], side: nc, sign: 1}
+  other_income:     {prefixes: ["711"], side: cn, sign: 1}
+  other_expense:    {prefixes: ["811"], side: nc, sign: 1}
+  income_tax:       {prefixes: ["821"], side: nc, sign: 1}
+  depreciation:     {prefixes: ["214"], side: cn, sign: 1}
+derived:
+  gross_profit: "net_revenue - cogs"
+  profit_before_tax: "net_revenue + finance_income + other_income - cogs - finance_expense - selling_expenses - admin_expenses - other_expense"
+  net_profit: "profit_before_tax - income_tax"
+interest_expense_rule:
+  account_prefix: "635"
+  description_keywords: ["lai vay", "lai tien vay"]
+  contra_prefixes: ["335", "341", "3388", "311"]

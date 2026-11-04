@@ -10,6 +10,11 @@ Hệ thống nằm trong repo `finance-skill`, thư mục `dashboard/`:
 - `dashboard/Alta_CFO_CEO_Dashboard.html` — bản mở trực tiếp, tạo bằng `python3 scripts/build_dashboard.py`.
 - `dashboard/README.md` — kiến trúc, danh sách báo cáo FAST cần xuất, quy trình tháng, định nghĩa chỉ số.
 
+## Tài liệu gốc
+- Đặc tả: `docs/ALTA_FAST_Data_Architecture_2026-11-04_v1.1.md` (thẻ bằng chứng, vai trò báo cáo, control matrix, state machine).
+- Pipeline: `alta-finance-intelligence/` (`afi dictionary | ingest | reconcile | pl`). Với file thật, chạy `afi dictionary` trước, đối chiếu tên cột với `config/report_registry.yaml`, không tự đoán ánh xạ.
+- Chính sách chờ duyệt: `docs/accounting_policies.md`; checklist xuất: `docs/fast_export_checklist.md`.
+
 ## Khi Khôi đưa file FAST và hỏi số liệu
 1. Nếu chỉ cần xem: hướng dẫn kéo file vào trang **Dữ liệu** của dashboard (bản HTML hoặc artifact).
 2. Nếu cần Claude tự phân tích: đọc file bằng pandas, **dùng đúng công thức của dashboard** (bảng `PL`, `BAL`, `CF_CAT` trong `src/dashboard.html`) để số khớp với màn hình:

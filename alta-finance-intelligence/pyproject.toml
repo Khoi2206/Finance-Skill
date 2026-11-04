@@ -1,0 +1,23 @@
+[project]
+name = "alta-finance-intelligence"
+version = "0.1.0"
+description = "Read-only FAST ERP reporting pipeline for ALTA Group (Phase 0)"
+requires-python = ">=3.10"
+dependencies = ["openpyxl>=3.1", "pyyaml>=6", "duckdb>=1.0", "pyarrow>=14"]
+
+[project.optional-dependencies]
+dev = ["pytest>=8"]
+
+[project.scripts]
+afi = "afi.cli:main"
+
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

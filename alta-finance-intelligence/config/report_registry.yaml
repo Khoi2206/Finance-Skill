@@ -1,0 +1,75 @@
+# Report registry: classification fingerprints and canonical → raw column aliases.
+# Aliases are compared after normalisation (lowercase, no diacritics, đ→d, punctuation→space).
+# status: ALTA_OBSERVED only after Finance confirms a genuine sample (record it in samples:).
+reports:
+  GL_JOURNAL:
+    fast_display_name: "Sổ nhật ký chung / Sổ chi tiết các tài khoản"
+    status: ALTA_VALIDATION_REQUIRED
+    parser: gl_journal
+    parser_version: "0.1.0"
+    grain: "one row per journal line (account side); pair layout split into two lines"
+    title_patterns: ["so nhat ky chung", "so chi tiet cac tai khoan", "so chi tiet tai khoan", "so cai"]
+    fingerprints:
+      - [posting_date, account_code, contra_account_code, debit, credit]
+      - [posting_date, debit_account, credit_account, amount]
+    samples: []
+  TB:
+    fast_display_name: "Bảng cân đối số phát sinh các tài khoản"
+    status: ALTA_VALIDATION_REQUIRED
+    parser: trial_balance
+    parser_version: "0.1.0"
+    grain: "company × period × account (parents and leaves; aggregate leaves only)"
+    title_patterns: ["can doi so phat sinh", "can doi phat sinh", "bang can doi tai khoan"]
+    fingerprints:
+      - [account_code, opening_debit, closing_credit]
+    samples: []
+  SALES_LIST:
+    fast_display_name: "Bảng kê hóa đơn bán hàng, dịch vụ"
+    status: ALTA_OBSERVED
+    evidence: "Layout used by alta-sales-report for 9M2026: header row 6, Tổng cộng footer"
+    parser: sales_list
+    parser_version: "0.1.0"
+    grain: "one row per invoice/voucher line"
+    title_patterns: ["bang ke hoa don ban hang", "hoa don ban hang"]
+    fingerprints:
+      - [posting_date, document_number, counterparty_code, amount, vat]
+    samples: []
+  PURCH_LIST:
+    fast_display_name: "Bảng kê mua hàng"
+    status: ALTA_OBSERVED
+    evidence: "Layout used by alta-sales-report for 9M2026 (stock receipts only)"
+    parser: null          # parser planned in Phase 1
+    title_patterns: ["bang ke mua hang"]
+    fingerprints:
+      - [posting_date, document_number, supplier_code, amount]
+    samples: []
+aliases:
+  posting_date: ["ngay ct", "ngay chung tu", "ngay hach toan", "ngay ghi so"]
+  document_number: ["so ct", "so chung tu", "so phieu"]
+  document_type: ["ma ct", "loai ct"]
+  invoice_number: ["so hoa don", "so hd"]
+  description: ["dien giai", "noi dung"]
+  account_code: ["tk", "tai khoan", "ma tk", "so hieu tk", "so hieu tai khoan"]
+  account_name: ["ten tai khoan", "ten tk"]
+  contra_account_code: ["tk du", "tk d u", "tk doi ung", "tai khoan doi ung"]
+  debit_account: ["tk no", "tai khoan no"]
+  credit_account: ["tk co", "tai khoan co"]
+  debit: ["ps no", "phat sinh no", "so phat sinh no", "no"]
+  credit: ["ps co", "phat sinh co", "so phat sinh co", "co"]
+  amount: ["tien", "so tien", "thanh tien", "tien hang"]
+  vat: ["thue", "tien thue", "thue gtgt"]
+  discount: ["chiet khau"]
+  receivable: ["phai thu"]
+  counterparty_code: ["ma khach", "ma kh", "ma doi tuong", "ma dt", "ma khach hang"]
+  counterparty_name: ["ten khach", "ten kh", "ten doi tuong", "ten khach hang"]
+  supplier_code: ["ma ncc", "ma nha cung cap"]
+  supplier_name: ["ten ncc", "ten nha cung cap"]
+  job_code: ["vu viec", "ma vu viec", "ma vv"]
+  salesperson: ["nv ban hang", "ma nvbh"]
+  opening_debit: ["so du dau ky no", "du no dau ky", "dau ky no"]
+  opening_credit: ["so du dau ky co", "du co dau ky", "dau ky co"]
+  period_debit: ["phat sinh trong ky no", "so phat sinh trong ky no", "phat sinh no trong ky"]
+  period_credit: ["phat sinh trong ky co", "so phat sinh trong ky co", "phat sinh co trong ky"]
+  closing_debit: ["so du cuoi ky no", "du no cuoi ky", "cuoi ky no"]
+  closing_credit: ["so du cuoi ky co", "du co cuoi ky", "cuoi ky co"]
+total_row_labels: ["tong cong", "cong", "tong"]

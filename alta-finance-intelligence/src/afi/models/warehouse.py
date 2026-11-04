@@ -12,7 +12,7 @@ from ..parsers.base import load_config
 
 V, N, B = "NULL::VARCHAR", "NULL::DOUBLE", "NULL::BOOLEAN"
 EMPTY = {
-    "GL_JOURNAL": f"{V} AS company_id, {V} AS month, {V} AS posting_date, {V} AS document_number, {V} AS account_code, {V} AS contra_account_code, {N} AS debit, {N} AS credit, {V} AS extraction_id, {V} AS source_filename, NULL::BIGINT AS source_row_number",
+    "GL_JOURNAL": f"{V} AS company_id, {V} AS month, {V} AS posting_date, {V} AS document_number, {V} AS account_code, {V} AS contra_account_code, {V} AS description, {V} AS counterparty_code, {V} AS counterparty_name, {V} AS job_code, {N} AS debit, {N} AS credit, {V} AS extraction_id, {V} AS source_filename, NULL::BIGINT AS source_row_number",
     "SALES_LIST": f"{V} AS company_id, {V} AS month, {N} AS amount, {V} AS extraction_id, {V} AS source_filename, NULL::BIGINT AS source_row_number",
     "TB": f"{V} AS company_id, {V} AS report_period_start, {V} AS report_period_end, {V} AS source_filename, {V} AS account_code, {B} AS is_leaf, {N} AS opening_debit, {N} AS opening_credit, {N} AS period_debit, {N} AS period_credit, {N} AS closing_debit, {N} AS closing_credit",
 }
@@ -75,7 +75,8 @@ class Warehouse:
             if spec.get("contra_prefixes"):
                 cond = f"({cond}) AND (" + " OR ".join(f"starts_with(coalesce(contra_account_code,''),'{p}')" for p in spec["contra_prefixes"]) + ")"
             val = "credit - debit" if spec["side"] == "cn" else "debit - credit"
-            parts.append(f"SELECT company_id, month, '{line}' AS line, {spec['sign']} * ({val}) AS amount, extraction_id, source_filename, source_row_number "
+            parts.append(f"SELECT company_id, month, '{line}' AS line, {spec['sign']} * ({val}) AS amount, extraction_id, source_filename, source_row_number, "
+                         f"account_code, counterparty_code, counterparty_name, description, posting_date "
                          f"FROM fact_gl_lines WHERE ({cond}) AND {ex}")
         self.con.execute("CREATE OR REPLACE VIEW pl_lines_lineage AS " + " UNION ALL ".join(parts))
         self.con.execute("CREATE OR REPLACE VIEW mart_pl_monthly AS SELECT company_id, month, line, sum(amount) AS amount FROM pl_lines_lineage GROUP BY ALL")

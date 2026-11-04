@@ -10,6 +10,7 @@
                              13-week direct cash forecast (Base/Downside), saved as a version
   afi cash13w --templates DIR      write empty CSV templates + params.yaml
   afi cash13w --write-sample DIR   write a synthetic sample (inputs for 2 Mondays + FAST-style GL)
+  afi boardpack --month 2026-10 [--mode month|ytd] [--plan plan.csv]   board pack PPTX (tools/board-pack)
 """
 from __future__ import annotations
 
@@ -44,6 +45,10 @@ def main(argv: list[str] | None = None) -> int:
     p.add_argument("--no-save", action="store_true", help="do not store this run as a forecast version")
     p.add_argument("--templates", type=Path, help="write empty input templates to this folder and exit")
     p.add_argument("--write-sample", type=Path, help="write a synthetic sample to this folder and exit")
+    p = sub.add_parser("boardpack", help="board pack PPTX (tools/board-pack)")
+    p.add_argument("--month", required=True); p.add_argument("--mode", choices=["month", "ytd"], default="month")
+    p.add_argument("--plan", type=Path); p.add_argument("--out", type=Path)
+    p.add_argument("--threshold-pct", type=float, default=0.10); p.add_argument("--threshold-amount", type=float, default=500e6)
     a = ap.parse_args(argv)
 
     if a.cmd == "ingest":
@@ -129,6 +134,18 @@ def _cash13w(a) -> int:
     print(f"DATA REQUIRED: {len(res['data_required'])} ({blocking} loại khỏi dự báo)")
     c = res["comparison"]
     print(f"So sánh: {c.get('prior_version_id') or c.get('message')}")
+    elif a.cmd == "boardpack":
+        tool = ROOT.parent / "tools" / "board-pack"
+        if not tool.exists():
+            print(f"Không tìm thấy công cụ board pack tại {tool}", file=sys.stderr)
+            return 2
+        sys.path.insert(0, str(tool))
+        from boardpack.cli import main as boardpack_main  # noqa: PLC0415
+        args = ["--month", a.month, "--mode", a.mode, "--data", str(a.data),
+                "--threshold-pct", str(a.threshold_pct), "--threshold-amount", str(a.threshold_amount)]
+        args += ["--plan", str(a.plan)] if a.plan else []
+        args += ["--out", str(a.out)] if a.out else []
+        return boardpack_main(args)
     return 0
 
 

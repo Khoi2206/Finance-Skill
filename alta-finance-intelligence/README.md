@@ -70,8 +70,9 @@ Ngày: `YYYY-MM-DD` hoặc `dd/mm/yyyy`. Số tiền: VND, dương (hướng thu
 | `src/afi/models/warehouse.py` | DuckDB: `effective`, `fact_gl_lines`, `fact_tb`, `fact_sales_lines`, `pl_lines_lineage`, `mart_pl_monthly` |
 | `src/afi/forecasts/cash13w.py` | 13-week direct cash model: inputs → items with DATA REQUIRED, Base/Downside, actuals from GL, versions + comparison |
 | `src/afi/forecasts/cash13w_excel.py`, `cash13w_sample.py` | Excel with live bridge formulas; synthetic sample generator |
+| `src/afi/models/warehouse.py` | DuckDB: `effective`, `fact_gl_lines`, `fact_tb`, `fact_sales_lines`, `pl_lines_lineage` (with account, counterparty, description), `mart_pl_monthly` |
 | `src/afi/dictionary.py` | Data contract YAML (spec §3) with redacted examples and open questions |
-| `tests/` | Synthetic fixtures: multi-line voucher, Dr/Cr pair layout, merged-header TB, observed sales list layout |
+| `tests/` | Synthetic fixtures: multi-line voucher, Dr/Cr pair layout, merged-header TB, observed sales list layout; `group_dataset()` = 3 entities × 22 months (GL, TB, sales list) used by tools/board-pack |
 
 ## Not yet built (by phase)
 Purchase list parser, COA/party masters (Phase 1) · intercompany control in pipeline, gold data pack for the dashboard (Phase 2) · 13-week cash: real bank snapshots, open AR/AP exports from FAST (Phase 3 — model built, waiting for data) · inventory, FA, jobs (Phase 4).

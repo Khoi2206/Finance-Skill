@@ -2,9 +2,16 @@
 
 Hệ thống biến báo cáo xuất từ **FAST Business** thành bảng điều hành CEO/CFO. Chỉ cần một file HTML, xử lý ngay trong trình duyệt: không cần máy chủ, không cài đặt, dữ liệu không rời máy.
 
-- **Mở dùng:** `Alta_CFO_CEO_Dashboard.html` (nhấp đúp mở bằng Chrome/Edge), hoặc bản online (riêng tư) trên Claude: https://claude.ai/artifact/6HGw5XDTkaSe2NpRi235E6.
-- **Mã nguồn:** `src/dashboard.html`. Sửa xong chạy `python3 scripts/build_dashboard.py` để tạo lại bản mở trực tiếp.
-- Lần đầu mở sẽ thấy **dữ liệu mẫu** (đánh dấu rõ). Nạp file thật thì dữ liệu mẫu biến mất.
+- **Bản hiện hành (v3):** `Alta_CFO_CEO_Dashboard_v3.html`.
+  - Nạp cả thư mục FAST, kiểm tra đầu vào từng file, có trang Đối chiếu và Đơn hàng.
+  - Thêm công nợ theo nhóm tuổi của FAST, TSCĐ/CCDC, kho và chi phí sản xuất theo yếu tố.
+  - Không có dữ liệu mẫu.
+  - Bàn giao và kết quả kiểm thử với bộ PLASTIC 9T/2026: [`docs/fast_plastic_v3_handover.md`](../docs/fast_plastic_v3_handover.md).
+- **Bản cũ (v2), giữ để so sánh:** `Alta_CFO_CEO_Dashboard_v2.html` (mã nguồn `src/dashboard_v2.html`).
+  - Bản online v2: https://claude.ai/artifact/6HGw5XDTkaSe2NpRi235E6.
+  - v2 có dữ liệu mẫu khi chưa nạp file.
+- **Mã nguồn v3:** `src/dashboard.html`. Sửa xong chạy `python3 scripts/build_dashboard.py` để tạo lại `Alta_CFO_CEO_Dashboard_v3.html`.
+- Phần dưới mô tả kiến trúc chung (từ v1/v2). Phần nạp FAST theo thư mục, bản trùng, nguồn chính/nguồn đối chiếu của v3 xem tài liệu bàn giao.
 
 ## 1. Kiến trúc
 

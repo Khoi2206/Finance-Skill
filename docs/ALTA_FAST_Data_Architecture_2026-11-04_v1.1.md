@@ -380,7 +380,7 @@ Tolerance: 0 VND for file totals and TB integrity; ≤ 1,000 VND rounding elsewh
 
 Content as in v1.0 (CEO, CFO, Media, Plastics, S&D/FP&A). Navigation standard: group → entity/BU → account/customer/job/product → voucher → **source file and Excel row**.
 
-The Phase 0 prototype (`dashboard/Alta_CFO_CEO_Dashboard.html`) already provides CEO, CFO, Sales and Data/Reconciliation pages with drill-down to file and row. Its role:
+The Phase 0 prototype (`dashboard/Alta_CFO_CEO_Dashboard_v2.html`; current build `dashboard/Alta_CFO_CEO_Dashboard_v3.html`) already provides CEO, CFO, Sales and Data/Reconciliation pages with drill-down to file and row. Its role:
 - **Phase 0–1:** an exploration and validation tool for Finance. It runs locally in the browser and sends no data anywhere.
 - **Phase 2+:** reads the gold data pack produced by the pipeline (one set of definitions), not raw Excel.
 - Media job economics and Plastics manufacturing pages are added only after Phase 4 data passes controls.

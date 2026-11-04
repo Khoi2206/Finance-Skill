@@ -7,7 +7,7 @@ description: Vận hành và mở rộng hệ thống "Alta CFO · CEO Dashboard
 
 Hệ thống nằm trong repo `finance-skill`, thư mục `dashboard/`:
 - `dashboard/src/dashboard.html` — mã nguồn (một file, chạy trong trình duyệt; ECharts + SheetJS từ cdnjs).
-- `dashboard/Alta_CFO_CEO_Dashboard.html` — bản mở trực tiếp, tạo bằng `python3 scripts/build_dashboard.py`.
+- `dashboard/Alta_CFO_CEO_Dashboard_v3.html` — bản mở trực tiếp (v3: nạp cả thư mục FAST, đối chiếu, đơn hàng), tạo bằng `python3 scripts/build_dashboard.py`. Bản v2 giữ ở `dashboard/Alta_CFO_CEO_Dashboard_v2.html`. Bàn giao v3: `docs/fast_plastic_v3_handover.md`.
 - `dashboard/README.md` — kiến trúc, danh sách báo cáo FAST cần xuất, quy trình tháng, định nghĩa chỉ số.
 
 ## Tài liệu gốc

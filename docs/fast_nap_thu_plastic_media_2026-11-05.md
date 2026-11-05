@@ -57,10 +57,17 @@ Các tài liệu JSON/Markdown/HTML (17 mục) là metadata/tham khảo, không 
 | P1 Nhãn “Đã đối chiếu” EBITDA | Đã sửa |
 | Thêm, phát hiện khi chạy lại | (a) Nút Tháng / Lũy kế / 12 tháng không có tác dụng từ v2: mọi trang luôn tính lũy kế năm. Đã sửa. (b) Thư mục `ALTA_MEDIA_…`/`ALTA_PLASTIC_…` có thể bị hiểu là công ty mẹ. Đã sửa: ALTA đứng trước mã đơn vị là tiền tố tập đoàn. (c) Banner tồn kho và ghi chú file xuất của MEDIA lấy kiểm tra của PLASTIC. Đã sửa. (d) Đơn hàng bán MEDIA trống hiện “cần nạp”. Đã sửa thành “đã xuất, trống”. |
 
-**Còn lại:**
-- Đọc Excel vẫn chạy trên luồng giao diện. Bộ 96 file mất khoảng 1,5–2 phút; trong lúc đọc có thanh tiến độ và trang có thể chậm phản hồi. Chưa chuyển sang Web Worker.
-- Dữ liệu đã nạp lưu trong IndexedDB của trình duyệt đang mở; chuyển máy hoặc trình duyệt thì phải nạp lại thư mục.
-- Mapping dòng tiền NKC còn phần đối ứng chưa phân loại (MEDIA −20.063.270; PLASTIC −2.000.002.874), giữ riêng, không gán vào HĐKD.
+**Sửa thêm trong bản 3.3 (05/11, sau lần nạp thử):**
+
+| Lỗi còn lại | Cách sửa | Kiểm tra trên 96 Excel |
+|---|---|---|
+| Đọc Excel chạy trên luồng giao diện | Đọc Excel và tính mã kiểm tra nội dung trong luồng nền (Web Worker). Nếu luồng nền không chạy được thì tự quay về cách cũ. | 96/96 file đọc bằng luồng nền, ở cả bản thường và bản offline. Thời gian nạp khoảng 85 giây. Giao diện đứng lâu nhất khoảng 1,5 giây (trước: cả lượt đọc từng file lớn). Số liệu không đổi. |
+| Dữ liệu chỉ nằm trong trình duyệt đang mở; không gửi được cho người khác | Nút **Lưu bản chia sẻ** ở thanh trên tạo một file HTML có sẵn dữ liệu đã nạp (nén gzip). Phạm vi theo đơn vị đang chọn. Người nhận mở là đọc được ở chế độ chỉ đọc: không nạp, xóa hay sửa nguồn, không ghi vào dữ liệu riêng của trình duyệt họ. Mọi trang, truy xuất chứng từ và nút xuất vẫn dùng được. | Bản chia sẻ hai đơn vị 16,6 MB, chỉ MEDIA 4,7 MB, đóng gói khoảng 3–4 giây. Mở trong trình duyệt sạch, chặn mạng: số khớp bản gốc (EBITDA PLASTIC 45.801.117.006, MEDIA 15.998.475.652); bản MEDIA không chứa số PLASTIC; 0 lỗi. |
+| Không xuất được dữ liệu biểu đồ | Mỗi biểu đồ có nút **CSV / Excel / PNG**. CSV và Excel gồm dữ liệu từng chuỗi và sheet `Pham_vi` (đơn vị, kỳ, chế độ kỳ); ô trống là không có dữ liệu, không phải 0. Cửa sổ truy xuất có thêm nút **Tải Excel** (toàn bộ dòng chứng từ kèm file, sheet, dòng Excel). | Đã thử cả ba định dạng; nút có ở mọi biểu đồ của CEO, CFO, Bán hàng, Công nợ, TSCĐ, Tồn kho. Tải Excel truy xuất EBITDA MEDIA: 4.216 dòng. |
+| Dòng tiền NKC còn phần đối ứng chưa phân loại | Đối ứng là TK 811 (chi phí khác): PLASTIC phiếu chi PLT13818 ngày 30/09 số tiền 2.000.000.000; MEDIA BN086.M01/26 số tiền 20.000.000 và vài khoản phí nhỏ. Theo mẫu LCTT trực tiếp TT200/TT99 (mã 07 “Tiền chi khác cho hoạt động kinh doanh”), xếp vào nhóm riêng “Chi phí khác (TK 811)” thuộc HĐKD. | Phần chưa phân loại còn 0 ở cả hai đơn vị. |
+| Nút lưu/xuất trên link online claude.ai | Dùng quyền tải file của Artifact (người xem bấm xác nhận khi lưu); mở file HTML trực tiếp thì tải bình thường. | — |
+
+**Lưu ý khi chia sẻ:** bản chia sẻ lưu từ `Alta_CFO_CEO_Dashboard_v3_offline.html` đã nhúng thư viện nên người nhận mở được không cần mạng. Lưu từ bản thường hoặc link online thì người nhận cần mạng để tải thư viện biểu đồ và Excel.
 
 ## 5. Chênh lệch từ nguồn FAST (không phải lỗi phần mềm, không tự điều chỉnh)
 

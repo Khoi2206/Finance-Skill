@@ -21,7 +21,8 @@ for url, fn in [("https://cdnjs.cloudflare.com/ajax/libs/echarts/5.5.1/echarts.m
     tag = '<script src="%s"></script>' % url
     assert tag in off, tag
     lib = (vend / fn).read_text(encoding="utf-8").replace("</script", "<\\/script")
-    off = off.replace(tag, "<script>/* %s (Apache-2.0, xem dashboard/vendor) */\n%s\n</script>" % (fn, lib))
+    sid = ' id="lib-xlsx"' if fn.startswith("xlsx") else ' id="lib-echarts"'
+    off = off.replace(tag, "<script%s>/* %s (Apache-2.0, xem dashboard/vendor) */\n%s\n</script>" % (sid, fn, lib))
 dst2 = root / "dashboard/Alta_CFO_CEO_Dashboard_v3_offline.html"
 dst2.write_text(off, encoding="utf-8")
 print(dst2, len(off))

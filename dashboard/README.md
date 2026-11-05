@@ -7,6 +7,7 @@ Hệ thống biến báo cáo xuất từ **FAST Business** thành bảng điề
   - Thêm công nợ theo nhóm tuổi của FAST, TSCĐ/CCDC, kho và chi phí sản xuất theo yếu tố.
   - Không có dữ liệu mẫu.
   - Bàn giao và kết quả kiểm thử với bộ PLASTIC 9T/2026: [`docs/fast_plastic_v3_handover.md`](../docs/fast_plastic_v3_handover.md).
+- **Bản ngoại tuyến:** `Alta_CFO_CEO_Dashboard_v3_offline.html` nhúng sẵn ECharts 5.5.1 và SheetJS 0.18.5 (Apache-2.0, bản gốc và giấy phép ở `vendor/`). Bản thường tự dùng `vendor/` khi không tải được CDN. Nạp thử hai bộ PLASTIC + MEDIA (96 Excel): [`docs/fast_nap_thu_plastic_media_2026-11-05.md`](../docs/fast_nap_thu_plastic_media_2026-11-05.md).
 - **Bản cũ (v2), giữ để so sánh:** `Alta_CFO_CEO_Dashboard_v2.html` (mã nguồn `src/dashboard_v2.html`).
   - Bản online v2: https://claude.ai/artifact/6HGw5XDTkaSe2NpRi235E6.
   - v2 có dữ liệu mẫu khi chưa nạp file.

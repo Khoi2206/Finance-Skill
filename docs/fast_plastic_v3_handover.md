@@ -10,6 +10,7 @@ Ngày kiểm thử: 04/11/2026. Bộ nguồn: `FAST_PLASTIC_DataRoom_2026-11-04`
 | `dashboard/Alta_CFO_CEO_Dashboard_v2.html` | Bản cũ, giữ nguyên để so sánh (đổi tên từ `Alta_CFO_CEO_Dashboard.html`). |
 | `dashboard/src/dashboard.html` / `dashboard/src/dashboard_v2.html` | Mã nguồn v3 / v2. `python3 scripts/build_dashboard.py` tạo lại bản v3. |
 | `docs/fast_plastic_v3_handover.md` | Tài liệu này. |
+| `docs/fast_multi_unit_v3_1.md` | Cập nhật v3.1: nhiều đơn vị ALTA/PLASTIC/MEDIA, schema metadata, rà soát thư mục. |
 
 v3 dùng kho IndexedDB riêng (`alta-fast-dash-v3`) nên dữ liệu đã nạp ở v2 và v3 không lẫn nhau.
 

@@ -9,6 +9,7 @@ Hệ thống biến báo cáo xuất từ **FAST Business** thành bảng điề
   - Bàn giao và kết quả kiểm thử với bộ PLASTIC 9T/2026: [`docs/fast_plastic_v3_handover.md`](../docs/fast_plastic_v3_handover.md).
 - **Bản ngoại tuyến:** `Alta_CFO_CEO_Dashboard_v3_offline.html` nhúng sẵn ECharts 5.5.1 và SheetJS 0.18.5 (Apache-2.0, bản gốc và giấy phép ở `vendor/`). Bản thường tự dùng `vendor/` khi không tải được CDN. Nạp thử hai bộ PLASTIC + MEDIA (96 Excel): [`docs/fast_nap_thu_plastic_media_2026-11-05.md`](../docs/fast_nap_thu_plastic_media_2026-11-05.md).
 - **Chia sẻ và xuất:** nút **Lưu bản chia sẻ** (thanh trên) tạo một file HTML chứa dữ liệu đã nạp theo đơn vị đang chọn; người nhận mở là đọc được, chỉ đọc (lưu từ bản offline thì không cần mạng). Mỗi biểu đồ có nút xuất CSV / Excel / PNG; cửa sổ truy xuất có nút Tải Excel.
+- **Tài liệu:** hướng dẫn sử dụng [`docs/dashboard_huong_dan_su_dung.md`](../docs/dashboard_huong_dan_su_dung.md) · cấu trúc kỹ thuật để sửa mã [`docs/dashboard_cau_truc_ky_thuat.md`](../docs/dashboard_cau_truc_ky_thuat.md).
 - **Bản cũ (v2), giữ để so sánh:** `Alta_CFO_CEO_Dashboard_v2.html` (mã nguồn `src/dashboard_v2.html`).
   - Bản online v2: https://claude.ai/artifact/6HGw5XDTkaSe2NpRi235E6.
   - v2 có dữ liệu mẫu khi chưa nạp file.
